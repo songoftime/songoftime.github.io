@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{
+				width: 800px;
+				height: 800px;
+				border: 1px solid #ccc;
+				position: relative;
+			}
+			#handle{
+				width: 50px;
+				height: 50px;
+				background: red;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<div id="handle">
+				
+			</div>
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/tween.js">
+	
+</script>
+<script type="text/javascript">
+	//tween.js包含四个参数
+	//t:起始步数(配合另一个参数d从而控制动画的时间)
+	//b:初始值(动画需要改变元素的初始位置)
+	//c:变化量
+	//d:总步数
+	//超全局对象
+	var handle = document.getElementById('handle');
+	var t = 0;
+	var b = 0;
+	var c = 400;
+	var d = 50;
+	var timer = setInterval(function(){
+		t+=2;
+		if(t>=d){
+			clearInterval(timer);
+		}
+		handle.style.left = Tween.Back.easeIn(t,b,c,d) + 'px';
+		
+	},30);
+</script>

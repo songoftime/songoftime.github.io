@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			#box{
+				width: 50px;
+				height: 50px;
+				background: red;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			
+		</div>
+	</body>
+</html>
+<script type="text/javascript" src="js/tween.js">
+	
+</script>
+<script type="text/javascript">
+	var box = document.getElementById('box');
+	//在5s时间内让box的高度变化到500px
+	var t = 13;
+	var b = 50;
+	var c = -50;
+	var d = 63;
+	var timer = setInterval(function(){
+		t++;
+		if(t>=d){
+			clearInterval(timer);
+		}
+		box.style.height = Tween.Back.easeIn(t,b,c,d) + 'px';
+		
+		
+	},100);
+</script>
