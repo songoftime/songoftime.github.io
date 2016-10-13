@@ -248,4 +248,48 @@ body{
     					text-decoration: none;
     					color: #ccc;
     				}
-		
+			    #linkss{
+    					position: absolute;
+    					left:400px;
+    					top: 100px;
+    				}
+    				#linkss a{
+    					text-decoration: none;
+    					color: #ccc;
+    				}
+    				#excel1{
+    					background: url(https://img.alicdn.com/imgextra/i1/2941517649/TB2VOAkXmiJ.eBjSspiXXbqAFXa_!!2941517649.png) no-repeat;
+    					width: 2000px;
+					height: 2100px;
+					background-size: 100%;
+					position: relative;
+    				}
+    				    #linksss{
+    					position: absolute;
+    					left:400px;
+    					top: 100px;
+    				}
+    				#linksss a{
+    					text-decoration: none;
+    					color: #ccc;
+    				}
+    				#excel2{
+    					background: url(https://img.alicdn.com/imgextra/i1/2941517649/TB2VOAkXmiJ.eBjSspiXXbqAFXa_!!2941517649.png) no-repeat;
+    					width: 2000px;
+					height: 2100px;
+					background-size: 100%;
+					position: relative;
+    				}
+				.aa:hover{
+					color: red;
+				}
+				#player1{
+					width: 1000px;
+					height: 1100px;
+					background: url(https://img.alicdn.com/imgextra/i1/2941517649/TB2VOAkXmiJ.eBjSspiXXbqAFXa_!!2941517649.png) no-repeat;
+					background-size: 100%;
+					position: relative;
+					bottom: 2700px;
+					left: 1000px;
+				}
+				
