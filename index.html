@@ -183,7 +183,7 @@
 				float: right;
 				background: rgba(255,255,255,0);
 			}
-			a{
+			#wrap a{
 				text-decoration: none;
 				color: white;
 			}
@@ -206,6 +206,29 @@
     				}
     				#logo1{
     					height: 200px;
+    				}
+    				.a2{
+    					text-decoration: none;
+    					color: #fff;
+    					opacity: 0.6;
+    				}
+    				#offical{
+    					width: 1000px;
+					height: 1100px;
+					background: url(https://img.alicdn.com/imgextra/i1/2941517649/TB2VOAkXmiJ.eBjSspiXXbqAFXa_!!2941517649.png) no-repeat;
+					background-size: 100%;
+					position: relative;
+					bottom: 1100px;
+					left: 1000px;
+    				}
+    				#links{
+    					position: absolute;
+    					top: 70px;
+    					left: 150px;
+    				}
+    				#links a{
+    					text-decoration: none;
+    					color: #ccc;
     				}
 		</style>
 	</head>
@@ -251,6 +274,19 @@
 			<li id="l9">9</li>
 			<li id="l0">10</li>
 		</ul>
+		</div>
+		<div id="offical">
+			<ul id="links">
+				<li style="color: white;"><h1>官方作品</h1></li><br><br>
+				<li><a href="http://www.bilibili.com/video/av3295561/">【时之歌】大型物语音乐计划时之歌project正式预告</a></li><br><br>
+				<li><a href="http://www.bilibili.com/video/av4078327/">【时之歌Project】【原创曲】光流终焉【人衣大人】</a></li><br><br>
+				<li><a href="http://www.bilibili.com/video/av3502452/">【时之歌Project】【原创曲】归一【吾恩&小坠&喵☆酱】</a></li><br><br>
+				<li><a href="http://www.bilibili.com/video/av3373841/">【时之歌Project】【原创曲】末日派热舞【Mario&俺酱】</a></li><br><br>
+				<li><a href="http://www.bilibili.com/video/av3901015/">【时之歌Project】【原创曲】虚拟神明【ClessS&洛萱】</a></li><br><br>
+				<li><a href="http://www.bilibili.com/video/av3647742/">【时之歌Project】【原创曲】悬空【RaJor&云の泣】</a></li><br><br>
+				
+				
+			</ul>
 		</div>
 		<div id="bgs">
 			<input type="button" id="x1" value="关闭" />
@@ -395,7 +431,7 @@
             </article>
                 </div>
             <audio src="img/bgm1.mp3" loop="loop" autoplay="autoplay"></audio>
-		<p class="copyright">Copyright © 2015 Funtune. Corporation, All Rights Reserved 泛音堂 版权所有 Powered By.纵恒暝灭-殇暝灸舞95<br><a href="http://www.miitbeian.gov.cn/" target="_blank">沪ICP备15049970号</a></p>
+		<p class="copyright">Powered By.纵恒暝灭-殇暝灸舞95|<a href="http://star.longzhu.com/686912/" class="a2">站长直播间</a></p>
 	</body>
 </html>
 <script src="js/tween.js" type="text/javascript" charset="utf-8"></script>
@@ -464,5 +500,8 @@
 		}
 		x2.onclick = function(){
 			jieshao.style.display = 'none';
+		}
+		block6.onclick = function(){
+			alert('本站是时之歌Project音乐物语企划同人网站,个人制作不以盈利为目的.同时在此发布纵恒暝灭音乐团队的新作品,如有侵权请联系站长.')
 		}
 </script>
