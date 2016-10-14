@@ -56,15 +56,17 @@
 		block3.onclick = function(){
 			bgs.style.display = 'block';
 		}
-		x1.onclick = function(){
+		
+		bgs.onclick = function(){
 			bgs.style.display = 'none';
 		}
 		block5.onclick = function(){
 			jieshao.style.display = 'block';
 		}
-		x2.onclick = function(){
+		jieshao.onclick = function(){
 			jieshao.style.display = 'none';
 		}
+		
 		block6.onclick = function(){
 			alert('本站是时之歌Project音乐物语企划同人网站,个人制作不以盈利为目的.同时在此发布纵恒暝灭音乐团队的新作品,如有侵权请联系站长.')
 		}
