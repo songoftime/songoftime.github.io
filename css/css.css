@@ -3,6 +3,15 @@
 				 background: url(https://img.alicdn.com/imgextra/i2/2941517649/TB2zHwJXheK.eBjSZFlXXaywXXa_!!2941517649.jpg) no-repeat;
 				background-size:auto 2100px ;
 			}
+			@font-face { 
+					font-family: STxingkai;
+					src: url(xingkai.ttf);
+} 
+			
+			
+			
+			
+			
 			*{
 				margin: 0;
 				padding: 0;
@@ -141,7 +150,7 @@
 				height: 155px;
 			}
 			#bgs{
-				position: absolute;
+				position: fixed;
 				background-color: rgba(255,255,255,0.2);
 				height: 1050px;
 				overflow: auto;
@@ -230,10 +239,14 @@
     					position: absolute;
     					top: 70px;
     					left: 150px;
+    					font-family: STxingkai;
+    					
     				}
     				#links a{
     					text-decoration: none;
     					color: #ccc;
+    					
+    					
     				}
     				#personal{
     					width: 1000px;
