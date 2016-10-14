@@ -1,11 +1,12 @@
-body{
+body{height:1800px ;
 				background: url(https://img.alicdn.com/imgextra/i2/2941517649/TB2zHwJXheK.eBjSZFlXXaywXXa_!!2941517649.jpg) no-repeat;
-				background-size:cover ;
+				background-size:100% 2100px ;
 			}
 			*{
 				margin: 0;
 				padding: 0;
 			}
+			
 			#wrap{
 				width: 1500px;
 				height: 300px;
