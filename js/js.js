@@ -52,6 +52,7 @@
 			}
 			btnss[index1].className="active"; 
 		}
+		
 		block3.onclick = function(){
 			bgs.style.display = 'block';
 		}
@@ -67,3 +68,21 @@
 		block6.onclick = function(){
 			alert('本站是时之歌Project音乐物语企划同人网站,个人制作不以盈利为目的.同时在此发布纵恒暝灭音乐团队的新作品,如有侵权请联系站长.')
 		}
+		var scr1 = document.getElementById('scroll1');
+		var timer3 = null;
+		
+		
+		function roll(){
+		timer3 = setInterval(function(){
+			scr1.style.left = scr1.offsetLeft - 10 + 'px';
+			if(scr1.offsetLeft<=-3000){
+				scr1.style.left ='0px';
+			}
+			var index = scr1.offsetLeft/-10;
+			index++;
+			if(index >= 360){
+				clearInterval(timer3);
+			}
+			
+		},1)}
+		roll();

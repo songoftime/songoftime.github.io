@@ -293,3 +293,27 @@ body{
 					left: 1000px;
 				}
 				
+				#scroll1{
+				height: 400px;
+				width:6000px;
+				position: absolute;
+				top: 0;
+				left: 0;
+				transition: all 0.8s;
+			}
+			
+			#content1{
+				margin: 20px auto 0;
+				width: 600px;
+				height: 400px;
+				overflow: hidden;
+				margin-top: 10px;
+				position: relative;
+				top: 30px;
+				left: -20px;
+				
+			}
+			#scroll1 img{
+				height: 400px;
+				width:600px;
+			}
