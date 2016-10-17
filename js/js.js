@@ -1,7 +1,7 @@
 
 	var imgg = content.getElementsByTagName('img');
 	var btnss = btns.getElementsByTagName('li');
-	var index1 = 0;
+	var index1 = 1;
 	var timer = null;
 	var timer1 = null;
 	var bbtns = list.getElementsByTagName('li');
@@ -12,11 +12,12 @@
 				imgg[i].style.opacity = 0;
 			}
 			imgg[index1].style.opacity = 1;
+			mov(index1);
 			index1++;
 			if(index1>9){
 				index1 = 0;
 			}
-			mov(index1-1);
+			
 		},1500);}
 		tim();
 		for(var i = 0;i<btnss.length;i++){
