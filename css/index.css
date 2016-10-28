@@ -1,7 +1,7 @@
 #flyWrap{
 	width: 343px;
 	height: 480px;
-	/*margin: 0 auto;*/
+	margin: 0 auto;
 	background: url(../img/bg.jpg);
 	position: relative;
 	overflow: hidden;
