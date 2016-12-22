@@ -1,0 +1,117 @@
+html {
+				font-size: 20px;
+				
+			}
+			
+			
+			#nav {
+				width: 16rem;
+				height: 3rem;
+				background: rgb(253, 225, 66);
+				position: fixed;
+				top: 0;
+				z-index: 999;
+			}
+			
+			#menus {
+				width: 3rem;
+				cursor: pointer;
+			}
+			
+			#logo {
+				width: 10rem;
+				margin-top: .4rem;
+			}
+			
+			#wrap img {
+				width: 16rem;
+			}
+			
+			#href {
+				width: 16rem;
+				height: 18rem;
+				background: rgb(253, 225, 66);
+				margin-bottom: 3rem;
+			}
+			
+			.href {
+				width: 5rem;
+				text-align: center;
+				line-height: 4rem;
+				height: 4rem;
+				border: 1px solid black;
+				font-size: 1rem;
+				display: inline-block;
+				float: left;
+				margin-top: 1rem;
+			}
+			
+			.href a {
+				color: brown;
+				text-decoration: none;
+				font-family: "microsoft yahei";
+			}
+			
+			#footer {
+				width: 16rem;
+				height: 3rem;
+				position: fixed;
+				bottom: 0;
+				background: white;
+				z-index: 999;
+			}
+			
+			#footer img {
+				cursor: pointer;
+				width: 5rem;
+			}
+			
+			#menu {
+				width: 14.7rem;
+				position: fixed;
+				left: -15rem;
+				top: 0;
+				z-index: 1000;
+				height: 100%;
+				background: rgb(253, 225, 66);
+				
+				/*display: none;*/
+			}
+			#menu1{
+				text-align: center;
+			}
+			#menu1 a{
+				text-decoration: none;
+				color: black;
+				
+			}
+			#menu2{
+				text-align: center;
+			}
+			#menu2 a{
+				text-decoration: none;
+				color: black;
+				
+			}
+			#menu3{
+				text-align: center;
+			}
+			#menu3 a{
+				text-decoration: none;
+				color: black;
+				
+			}
+			#menu4{
+				text-align: center;
+			}
+			#menu4 a{
+				text-decoration: none;
+				color: black;
+				
+			}
+			#close1{
+				cursor: pointer;
+			}
+			#menu1,#menu2,#menu3,#menu4{
+				display: none;
+			}

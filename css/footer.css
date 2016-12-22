@@ -1,0 +1,20 @@
+#footer{
+				width: 1498px;
+				/*height: 230px;*/
+				border: 1px solid #CCCCCC;
+				margin-top:54px;
+				margin-left: 75px;
+				background: rgb(253,225,66);
+				/*margin-bottom: 200px;*/
+			}
+			.friendlink{
+				width: 1000px;
+				margin-top: 20px;
+				margin-left: 50px;
+				display: inline-block;
+			}
+			.friendlink a{
+				text-decoration: none;
+				color: brown;
+				
+			}

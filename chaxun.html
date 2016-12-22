@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>门店查询</title>
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<style type="text/css">
+			#gy {
+				width: 200px;
+				height: 90px;
+				background: url(img/title_bg1.png);
+				background-size: 100% 100%;
+				margin-left: 75px;
+			}
+			
+			#hrefs {
+				width: 168px;
+				height: 200px;
+				padding: 15px;
+				border: 1px solid #ccc;
+				margin-left: 75px;
+			}
+			
+			#hrefs ul li {
+				border-bottom: 1px solid #ccc;
+				line-height: 45px;
+			}
+			
+			#hrefs ul li a {
+				font-size: 17px;
+				text-decoration: none;
+				color: black;
+				font-family: "Microsoft YaHei";
+			}
+			
+			#hrefs ul li a:hover {
+				color: red;
+			}
+			
+			#floatwindow {
+				position: fixed;
+				top: 30%;
+				right: 0%;
+				z-index: 999;
+			}
+			
+			.inwrap {
+				position: absolute;
+				top: 170px;
+				left: 300px;
+			}
+			.swiper-slide{
+				width: 1275px;
+			}
+			#citys{
+				position: absolute;
+				top: 470px;
+				z-index: 999;
+				left: 300px;
+				width: 1000px;
+			}
+			#citys span{
+				cursor: pointer;
+				margin-left: 10px;
+			}
+			#citys span:hover{
+				color: red;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div id="nav">
+			<a id="logo" href="index.html"><img src="img/logo.png" /></a>
+			<ul style="display: inline-block;width: 830px;position: absolute;left: 720px;" id="navhref">
+				<li id="btn1">
+					<a href="qiyejieshao.html">关于我们</a>
+				</li>
+				<li id="btn2">
+					<a href="jixiangmeishi.html">吉祥美食</a>
+				</li>
+				<li id="btn3">
+					<a href="mendian.html">吉祥门店</a>
+				</li>
+				<li id="btn4">
+					<a href="dongtai.html">吉祥动态</a>
+				</li>
+				<li id="btn5">
+					<a href="jiameng.html">招商加盟</a>
+				</li>
+
+				<li id="btn6" style="border-right: 1px solid #CCCCCC;">
+					<a href="lianxi.html">联系我们</a>
+				</li>
+			</ul>
+			<div id="menu1">
+				<a href="qiyejieshao.html">企业介绍</a>|
+				<a href="jixiangjieshao.html">吉祥介绍</a>|
+				<a href="jixiangrongyu.html">吉祥荣誉</a>
+			</div>
+			<div id="menu2">
+				<a href="huntun.html">馄饨系列</a>|
+				<a href="banliao.html">拌料系列</a>|
+				<a href="mian.html">面系列</a>|
+				<a href="bing.html">饼系列</a>|
+				<a href="xiaocai.html">小菜系列</a>|
+				<a href="yinpin.html">饮品系列</a>|
+				<a href="xinpin.html">新品推荐</a>
+			</div>
+			<div id="menu3">
+				<a href="mendian.html">门店展示</a>|
+				<a href="chaxun.html">门店查询</a>
+
+			</div>
+			<div id="menu4">
+				
+				<a href="huodong.html">促销活动</a>|
+				<a href="shangshi.html">新品上市</a>|
+				<a href="hangye.html">行业新闻</a>
+
+			</div>
+			<div id="menu5">
+				<a href="zhaoshang.html">招商加盟</a>|
+				<a href="chengshi.html">城市加盟商</a>|
+				<a href="youshi.html">加盟优势</a>|
+				<a href="anli.html">成功案例</a>|
+				<a href="qa.html">加盟问答</a>|
+				<a href="shenqing.html">在线申请</a>
+
+			</div>
+			<div id="menu6">
+				<a href="lianxifangshi.html">联系方式</a>|
+				<a href="">在线留言</a>
+
+			</div>
+		</div>
+		<div id="bar">
+			<p id="txt1" style="line-height: 26px;margin-left: 70px;font-size: 16px;">欢迎您咨询吉祥馄饨·面品牌项目，全国招商热线：400-618-0088</p>
+			<div id="share" class="bdsharebuttonbox">
+				<a href="#" class="bds_more" data-cmd="more"></a>
+				<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+				<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+				<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+				<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a>
+				<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+			</div>
+
+		</div>
+		<div id="wrap">
+			<div id="xuanqu">
+				<div id="gy">
+					<h2 style="font-family: 'Microsoft YaHei';margin-left: 30px;margin-top: 30px;">门店展示</h2>
+
+				</div>
+				<div id="hrefs">
+					<ul>
+
+						<li>
+							<a href="mendian.html">门店展示</a>
+						</li>
+						<li>
+							<a style="color: red;" href="chaxun.html">门店查询</a>
+						</li>
+					</ul>
+				</div>
+				<div id="">
+					<a href="index.html"><img style="border: 1px solid #CCCCCC;margin-left:75px ;width: 198px;" src="img/20141208040034183.jpg" /></a>
+				</div>
+				<div id="">
+					<a href=".html"><img style="width: 200px;margin-left: 75px;" src="img/20141105092315509.jpg" /></a>
+				</div>
+			</div>
+			<div style="font-size: 17px;color: brown;cursor: pointer;" id="citys">
+				<span id="jinan1">济南</span>
+				<span id="yantai1">烟台</span>
+				<span id="qingdao1">青岛</span>
+				<span id="binzhou1">滨州</span>
+				<span id="rizhao1">日照</span>
+				<span id="weihai1">威海</span>
+				<span id="laiwu1">莱芜</span>
+				<span id="dezhou1">德州</span>
+				<span id="zibo1">淄博</span>
+				<span id="zaozhuang1">枣庄</span>
+				<span id="heze1">菏泽</span>
+				<span id="dongying1">东营</span>
+				<span id="jining1">济宁</span>
+				<span id="linyi1">临沂</span>
+				<span id="weifang1">潍坊</span>
+				<span id="taian1">泰安</span>
+				<span id="liaocheng1">聊城</span>
+			</div>
+			<div class="inwrap" id="jinan">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南高新区香格里拉商业街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">南市章丘市江泉路西首林业局对过</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">章丘市宝岛街黄河河务局对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市经十东路名士豪庭商业街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市师范大学对过</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市平阴县榆山路龙山小学东</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市槐荫区华联广场店北</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">章丘市环湖街南段路东门头房百脉泉南门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市北园路龙都大酒店西门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南山水大润发小吃街南头</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市历城区世纪大道英才商业街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市明湖中学西临鹿台精英会所隔壁</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市泉城路180号舜井淳和南门隔壁</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市重汽彩世界门面房</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">平阴县五岭路北段实验小</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市章丘区党校街中段</td></tr>
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南香格里拉店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">章丘汇泉</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">章丘宝岛</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南名士豪庭店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南山师店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">平阴店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">槐荫店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">章丘百脉泉店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">清河店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">山水店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南市英才商业街店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">明湖店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">贵和店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">彩世界</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">平阴环秀店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">南章丘党校街店</td></tr>
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" style="display: none;" id="yantai">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">牟平区南华街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">庆善街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">府西街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">幸福路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">中天广场</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台市开发区长白山路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">昌山路中心医院对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">开发区长白山路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">沙河镇和平街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">开发区星海广场</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">定海路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">开发区恒达农贸市场一期</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">开发区凤台小区</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱山区观海路346号滨州医学院</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台海阳市徐家店镇G204国道旁</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台莱阳市羊郡镇永昌路</td></tr>
+				</table>
+                 <table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台牟平小小店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台毓璜顶医院店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台府西店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台幸福路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台佳乐家</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台旌旗店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱阳中心店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台开发区医院</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台沙河店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台星海广场店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台淀海</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台恒达店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台凤台店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">烟台滨州医学院店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">徐家店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">羊郡店</td></tr>
+				</table>
+			</div>
+			
+			<div class="inwrap" id="qingdao" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">昌山路中段</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">即墨市服装批发市场C区后门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">李家女姑社区</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">胶南滨海新村中心街海坛路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱西蓬莱路店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">黄岛区胶南铁山东路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">金水路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">琴岛学院</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">蓝村镇市场</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">夏庄路7号</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">金水路24号下王埠</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">鹤山路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">新湛二路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">春阳路大润发后门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">青岛胶南珠山路21-17</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">青岛即墨鹤山路新利群宜居小吃街393号</td></tr>
+				</table>
+                 <table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱阳昌山店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">青岛新市场</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">城阳李家女姑店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">胶南滨海新村店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱西蓬莱路店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">青岛石桥店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">即墨青石店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">青岛理工大学店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">即墨蓝村店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">青岛乐客城</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">青岛金水路店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">青岛新鹤山</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">青岛长城店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">城阳大润发店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">珠山路店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">新利群店</td></tr>
+				</table>
+			</div>
+			
+			<div class="inwrap" style="display: none;" id="binzhou">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州市黄河四路和渤海十路交叉口中国人寿对过</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">无棣县棣新四路工商银行斜对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">沾化县富城路老县府对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州博兴县名士豪庭</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">无棣县香榭里大街80号</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州市黄河三路渤海七路国际商业区</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州阳信县阳城四路幸福广场</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州无棣县棣新一路新世纪商场南侧</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州阳信县阳城三路一中门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州市黄河三路渤海九路交叉口</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州市博兴县纯梁镇华宇综合楼门口</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">沾化县富桥路汽车9队</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州博兴县兴福镇国宾花苑广场</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州无棣中心大街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州市黄河八路和渤海五路交叉口西北角吉祥馄饨面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">邹平市黛溪三路永安商场隔壁</td></tr>
+				</table>
+                 <table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州明珠店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州无棣店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州沾化店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">博兴新城店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州市无棣县香榭里店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">渤海国际店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州阳信二店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">无棣新世纪店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州阳信店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州市滨城区维依店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">纯梁锦绣店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州沾化二店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州兴福店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州无棣浩然店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州如意店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">滨州市邹平县宏业店</td></tr>
+				</table>
+			</div>
+			
+			<div class="inwrap" style="display: none;" id="rizhao">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照市国际海洋城涛雒商业街东首</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照海滨二路石臼市场东门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照大学城文湖路南头</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照市岚山区童海一路黄海粮油对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照市学院路677号水利学院</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照威海路体育学院东门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照市海曲西路银座对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照市东港区海曲东路水晶花园小区对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照市五莲县解放路开泰百货大楼西侧</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照曲师大日照学院第一生活区</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照市丽阳路百货大楼理货区对过</td></tr>
+					
+				</table>
+                 <table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照涛雒店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照石臼市场店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照曲师大店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">岚山黄海粮油店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照水利学院店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照体育学院店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照银座店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照水晶花园店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照五莲百货大楼店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照大学</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">日照丽阳</td></tr>
+					
+				</table>
+			</div>
+			
+			<div class="inwrap" style="display: none;" id="weihai">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">长峰西区西一区1号楼2号网点</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">海滨北路大润发北门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">文化西路哈工大</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">俚岛供销社</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">威海文登米山东路</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">观海路人民医院东</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">山东威海市环翠区张村镇长江街28号</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">威海环翠区宫松岭路与古寨东路交叉口</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">山东省威海市环翠区天东小区小城故事40-4</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">威海环翠区宫松岭路与古寨东路交叉口</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">威海文登南海新区英伦湾商业街</td></tr>
+					
+				</table>
+                 <table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">威海长峰店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">威海大润发店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">威海哈工大店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">荣成俚岛店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">文登一中店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">威海观海店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">家家悦店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">时光城店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">小城故事店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">山东威海市环翠区威高时光城店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">威海文登南海新区英伦湾店吉祥</td></tr>
+					
+				</table>
+			</div>
+			
+			<div class="inwrap" style="display: none;"  id="laiwu">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱芜钢城区友谊大街64号玫瑰园</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱芜市风城西大街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱芜市莱城区金莱广场</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱芜市莱钢黄庄镇刘家庄商业街中段</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱芜市莱钢黄庄镇刘家庄商业街中段</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">山东省莱芜市附小南商业街</td></tr>
+					
+					
+				</table>
+                 <table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱芜钢城店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">金莱广场店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱芜金莱店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱芜市莱钢桃花源店多品牌</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">桃花源店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">莱芜市附小店</td></tr>
+					
+					
+				</table>
+			</div>
+			
+			<div class="inwrap" id="dezhou" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州市德城区华联商厦北门对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州市经济开发区晶华大道小申便民市场</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">齐河县齐鲁大街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州武城县国泰小区正门斜对过</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州市开发区高地商业街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州市临邑县汽车站对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州市中心血站以西银座广场对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州市夏津县南城区县医院对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州市庆云县文化路西首</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州市平原人民医院对过</td></tr>
+					
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州华联店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州小申便民</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州齐河齐鲁大街店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州武城国泰店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州高地</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州临邑</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州共青团</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州夏津</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">庆云信誉(二店)</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">德州平原</td></tr>
+					
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" id="zibo" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">淄博市张店区众诚</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">淄博市西九路理工大学北门对过亿丰大厦</td></tr>
+					
+					
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">众诚店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">淄博亿丰店</td></tr>
+					
+					
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" id="zaozhuang" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">薛城区临山公园南</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">枣庄市高新区祁连山路枣矿医院对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">薛城区人民医院</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">枣庄滕州市北辛中路与大同路交汇处路南</td></tr>
+					
+					
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">枣庄吉祥薛城店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">枣庄如玉店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">枣庄薛城天安</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">汽车总站店</td></tr>
+					
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" id="heze" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽市大学路菏泽学院对过</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽郓城县唐塔路西段路南</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">巨野县人民医院东临</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽市巨野县招商街光麟世纪园斜对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽市单县温州府前步行街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽市巨野县万丰镇鑫安购物广场一层</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽市巨野县万丰镇鑫安购物广场一层</td></tr>
+					
+					
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽学院店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽郓城唐塔店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽巨野</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">招商街店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">辛格玛购物中心店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">万丰店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">菏泽巨野万丰店吉祥</td></tr>
+					
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" id="dongying" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营市东营区胜利采油厂油田二中北门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营市东营区淄博路西五区</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营垦利小吃秆</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营市济南路与西三路交叉口</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营市济南路商业大厦</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营垦利县东安镇东安农贸市场西侧</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营市东城区东三路儿童医院对面</td></tr>
+					
+					
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">胜采店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营西五区店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">垦利中兴店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济南路店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">商业大厦店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营振华店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">东营儿童医院店</td></tr>
+					
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" id="jining" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁市市中区洸河花园东门</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁市建设路与刘庄路交叉口</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁市红星东路二院对过任城土产公司</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁市鱼台县佳客多超市</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁人民公园北门西</td></tr>
+					
+					
+					
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁洸河花园店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁太东北门店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁国翠城店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁鱼台佳客多店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">济宁东门店</td></tr>
+					
+					
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" id="linyi" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">临沂兰山区红旗路六中东邻</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">临沂市兰山区临西三路与开阳路交会</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">临沂费县东方超市对面</td></tr>
+					
+					
+					
+					
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">临沂广场店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">临沂南坊店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">临沂费县店</td></tr>
+					
+					
+					
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" id="weifang" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">寿光市东城全福元商厦步行街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">安丘市人民医院对面</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">寿光金光街</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">潍坊市寿光市健康街人民医院斜对过</td></tr>
+					
+					
+					
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">寿光全福元店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">人民医院店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">寿光学院店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">桐桐</td></tr>
+					
+					
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" id="taian" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">校场街东岳大街路口南50米路东</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">泰安市泰山大街利得摩尔商贸城</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">泰安市虎山东路中段</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">泰安市泰山大街附属医院正对面</td></tr>
+					
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">泰安市新农大商业步行街</td></tr>
+					
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">泰安校场街店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">泰安利得摩尔店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">泰安二中</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">泰医附院店</td></tr>
+					
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">泰安农大</td></tr>
+				</table>
+                 
+			</div>
+			
+			<div class="inwrap" id="liaocheng" style="display: none;">
+				<img style="width:1275px ;" src="img/20141105023745946.jpg" />
+				<table style="display: inline-block;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">地址</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城市东昌路市政府临街楼</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城市开发区御润财富城</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城市阳谷县宝福邻东临</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城市茌平县顺河街南头路西</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">高唐县农业银行南侧</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城市花园北路星光水晶城南门面房</td></tr>
+				</table>
+				<table style="display: inline-block;float: left;" border="" cellspacing="" cellpadding="">
+					<tr><th style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">店名</th></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城市政店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城开发区店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城阳谷店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城茌平顺河店</td></tr>
+					
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城高唐店</td></tr>
+					<tr><td style="font-size: 17px;text-align: center;line-height: 40px;width: 632px;">聊城水城店</td></tr>
+				</table>
+                 
+			</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		</div>
+
+		<div style="margin-top:438px ;" id="footer">
+			<div class="friendlink">
+
+				友情链接（QQ:1655136520）：
+				<a href="http://xx.spzs.com/" target="_blank">休闲食品招商</a>&nbsp; |
+				<a href="http://www.abaozai.com" target="_blank">汉堡加盟</a>&nbsp; |
+				<a href="http://canyin.jiameng.com" target="_blank">特色餐饮加盟</a>&nbsp; |
+				<a href="http://www.ahlsg.com/" target="_blank">卤三国</a>&nbsp; |
+				<a href="http://canyin.liansuo.com/" target="_blank">餐饮加盟</a>&nbsp; |
+				<a href="http://www.mala123.com" target="_blank">重庆小面50强</a>&nbsp; |
+				<a href="http://www.91cy.cn/" target="_blank">创业商机</a>&nbsp; |
+				<a href="http://www.xiaochiwang.org" target="_blank">小吃加盟网</a>&nbsp; |
+				<a href="http://www.maoocoffee.com/" target="_blank">咖啡店加盟</a>&nbsp; |
+				<a href="http://www.yangxiezijiameng.com" target="_blank">羊蝎子火锅加盟</a>&nbsp; |
+				<a href="http://www.bingzhihuang.com" target="_blank">槟榔代理</a>&nbsp; |
+				<a href="http://www.sanhoucal.com/" target="_blank">牛排加盟</a>&nbsp; |
+				<a href="http://www.zgbql.com/" target="_blank">冰淇淋加盟 </a>&nbsp; |
+				<a href="http://www.duoweizi.org/" target="_blank">小吃培训</a>&nbsp; |
+				<a href="http://www.wangdanian.cn" target="_blank">舟山海鲜</a>&nbsp; |
+				<a href="http://www.makecoffee.cn" target="_blank">咖啡工坊</a>&nbsp; |
+				<a href="http://www.716it.com/" target="_blank">火锅店加盟</a>&nbsp; |
+				<a href="http://www.jixiang-china.cn/" target="_blank">吉祥馄饨·面</a>&nbsp; |
+				<a href="http://www.17meishi8.com/" target="_blank">美食做法</a>&nbsp; |
+				<a href="http://cyjm.28.com" target="_blank">餐饮加盟</a>&nbsp; |
+				<a href="http://www.malaban.cn/" target="_blank">麻辣拌加盟</a>&nbsp; |
+				<a href="http://www.shibaili.com/" target="_blank">干洗店加盟</a>&nbsp; |
+				<a href="http://www.64518.com/" target="_blank">518菜谱网</a>&nbsp; |
+				<a href="http://www.exek.com.cn/" target="_blank">快餐加盟</a>&nbsp; |
+				<a href="http://www.micamika.com" target="_blank">生日蛋糕</a>&nbsp; |
+				<a href="http://www.suiw.org" target="_blank">随县网</a>&nbsp; |
+				<a href="http://www.shkdschool.com/" target="_blank">西点培训学校</a>&nbsp; |
+				<a href="http://www.ynxd.net" target="_blank">玛咖</a>&nbsp; |
+				<a href="http://www.21jf.cn" target="_blank">干洗店加盟</a>&nbsp; |
+				<a href="http://www.hlh9.cn" target="_blank">奔富红酒</a>&nbsp; |
+				<a href="http://www.szmgjm.net" target="_blank">三汁焖锅加盟</a>&nbsp; |
+				<a href="http://www.thwine.net" target="_blank">深圳葡萄酒</a>&nbsp; |
+				<a href="http://www.shangziwei.com" target="_blank">小龙虾加盟</a>&nbsp; |
+				<a href="http://www.jianaiwang.cc" target="_blank">简爱网</a>&nbsp; |
+				<a href="http://www.dike8.com" target="_blank">地摊网</a>&nbsp; |
+
+			</div>
+			<div id="floatwindow">
+				<a href="http://pqt.zoosnet.net/LR/Chatpre.aspx?id=PQT81906389&cid=1482201469100592681262&lng=cn&sid=1482201469100592681262&p=http%3A//www.jixiang-china.cn/&rf1=http%3A//www.jixiang-china&rf2=.cn/jieshao/&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&d=1482206150972"><img src="img/onlineimgsrc_cn.png" /></a>
+				<p style="text-align: center;cursor: pointer;" id="close1">关闭</p>
+			</div>
+			<img style="display: inline-block;" src="img/20141104101841869.png" />
+			<div class="bottomdibu">
+				<div style="margin-left:50px ;" class="bottom_wenzi">招商加盟热线：400-618-0088 &nbsp;鲁ICP备16002511号-1 <br>主关键词：
+					<a href="index.html">
+						<font color="#948400">吉祥馄饨</font>
+					</a>|
+					<a href="index.html">
+						<font color="#948400">吉祥馄饨加盟</font>
+					</a>|
+					<a href="index.html">
+						<font color="#948400">馄饨加盟</font>
+					</a>|
+					<a href="index.html">
+						<font color="#948400">吉祥馄饨官网</font>
+					</a>|
+					<a href="index.html">
+						<font color="#948400">吉祥馄饨面加盟</font>
+					</a>|
+					<a href="index.html">
+						<font color="#948400">吉祥馄饨加盟费</font>
+					</a>&nbsp;
+
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<!--百度分享-->
+<script>
+	window._bd_share_config = {
+		"common": {
+			"bdSnsKey": {},
+			"bdText": "",
+			"bdMini": "2",
+			"bdMiniList": false,
+			"bdPic": "",
+			"bdStyle": "0",
+			"bdSize": "24"
+		},
+		"share": {},
+		"selectShare": {
+			"bdContainerClass": null,
+			"bdSelectMiniList": ["qzone", "tsina", "tqq", "renren", "weixin"]
+		}
+	};
+	with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+</script>
+<script type="text/javascript">
+	jinan1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "block";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	yantai1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "block";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	qingdao1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "block";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	binzhou1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "block";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	rizhao1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "block";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	weihai1.onclick = function(){
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "block";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		dezhou.style.display = "none";
+	}
+	laiwu1.onclick = function(){
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "block";
+		dezhou.style.display = "none";
+		
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	zibo1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "block";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	zaozhuang1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "block";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	heze1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "block";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	dongying1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "block";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	jining1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "block";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	linyi1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "block";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	weifang1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "block";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		
+	}
+	taian1.onclick = function(){
+		dezhou.style.display = "none";
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "block";
+		liaocheng.style.display = "none";
+		
+	}
+	liaocheng1.onclick = function(){
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "block";
+		dezhou.style.display = "none";
+	}
+	dezhou1.onclick = function(){
+		jinan.style.display = "none";
+		yantai.style.display = "none";
+		qingdao.style.display = "none";
+		binzhou.style.display = "none";
+		rizhao.style.display = "none";
+		weihai.style.display = "none";
+		laiwu.style.display = "none";
+		dezhou.style.display = "none";
+		laiwu.style.display = "none";
+		zibo.style.display = "none";
+		zaozhuang.style.display = "none";
+		heze.style.display = "none";
+		dongying.style.display = "none";
+		jining.style.display = "none";
+		linyi.style.display = "none";
+		weifang.style.display = "none";
+		taian.style.display = "none";
+		liaocheng.style.display = "none";
+		dezhou.style.display = "block";
+		
+	}
+</script>
+
+
+

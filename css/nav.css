@@ -1,0 +1,155 @@
+body{
+	width: 60%;
+}
+#logo{
+				margin-left: 50px;
+			}
+			#nav{
+				width: 1500px;
+				height: 113px;
+				background: rgb(253,225,66);
+				margin-left: 75px;
+				margin-right：75px；
+			}
+			#navhref li a{
+				text-decoration: none;
+			}
+			#navhref li{
+				text-decoration: none;
+				display: inline-block;
+				font-size: 20px;
+				width: 113px;
+				height: 113px;
+				float: left;
+				border-left: 1px solid #ccc;
+				cursor: pointer;
+				line-height: 113px;
+				text-align: center;
+			}
+			#navhref li p{
+				font-size: 10px;
+			}
+			#navhref li:hover{
+				background: rgb(241,213,51);
+				
+			}
+			#menu1{
+				font-size: 16px;
+				color: #ccc;
+				position: absolute;
+				top: 113px;
+				left: 674px;
+				display:none;
+				width: 1000px;
+			}
+			#menu1 a{
+				text-decoration: none;
+				color: #aaa;
+				
+			}
+			#menu1 a:hover{
+				color: red;
+			}
+			#menu2{
+				font-size: 16px;
+				color: #ccc;
+				position: absolute;
+				top: 113px;
+				left: 674px;
+				display:none;
+				width: 1000px;
+			}
+			#menu2 a{
+				text-decoration: none;
+				color: #aaa;
+				
+			}
+			#menu2 a:hover{
+				color: red;
+			}
+			#menu3{
+				font-size: 16px;
+				color: #ccc;
+				position: absolute;
+				top: 113px;
+				left: 934px;
+				display:none;
+				width: 1000px;
+			}
+			#menu3 a{
+				text-decoration: none;
+				color: #aaa;
+				
+			}
+			#menu3 a:hover{
+				color: red;
+			}
+			#menu4{
+				font-size: 16px;
+				color: #ccc;
+				position: absolute;
+				top: 113px;
+				left: 934px;
+				display:none;
+				width: 1000px;
+			}
+			#menu4 a{
+				text-decoration: none;
+				color: #aaa;
+				
+			}
+			#menu4 a:hover{
+				color: red;
+			}
+			#menu5{
+				font-size: 16px;
+				color: #ccc;
+				position: absolute;
+				top: 113px;
+				left: 1004px;
+				display:none;
+				width: 1000px;
+			}
+			#menu5 a{
+				text-decoration: none;
+				color: #aaa;
+				
+			}
+			#menu5 a:hover{
+				color: red;
+			}
+			#menu6{
+				font-size: 16px;
+				color: #ccc;
+				position: absolute;
+				top: 113px;
+				left: 1270px;
+				display:none;
+				z-index: 999;
+				width: 200px;
+			}
+			#menu6 a{
+				text-decoration: none;
+				color: #aaa;
+				
+			}
+			#menu6 a:hover{
+				color: red;
+			}
+			#bar{
+				width: 1498px;
+				height: 27px;
+				background: #eee;
+				border: 1px solid #ccc;
+				margin-left: 75px;
+			}
+			#share{
+				position: absolute;
+				left: 1120px;
+				top: 109px;
+				width: 460px;
+			}
+			#share a{
+				margin-left:20px ;
+				
+			}

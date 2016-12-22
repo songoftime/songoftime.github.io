@@ -2,136 +2,43 @@
 <html>
 
 	<head>
-		<script type="text/javascript">
-			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
-    			window.location.href ="mobile/index.html";
-			} else if (/(Android)/i.test(navigator.userAgent)) {
-   		 	window.location.href ="mobile/index.html";
-			} else {
-   			
-			};
-			
-	</script>
-		<meta charset="utf-8" />
-		<title>吉祥馄饨面</title>
-		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<meta charset="UTF-8">
+		<title>新品上市</title>
 		<link rel="stylesheet" type="text/css" href="css/nav.css" />
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
 		<style type="text/css">
-			#fastnews {
-				width: 1498px;
-				height: 50px;
-				border: 1px solid #ccc;
-				line-height: 50px;
+			#gy {
+				width: 200px;
+				height: 90px;
+				background: url(img/title_bg1.png);
+				background-size: 100% 100%;
 				margin-left: 75px;
-				background: #eee;
 			}
 			
-			#news {
-				width: 220px;
-				height: 220px;
-				background: rgb(253, 225, 66);
+			#hrefs {
+				width: 168px;
+				height: 200px;
+				padding: 15px;
 				border: 1px solid #ccc;
 				margin-left: 75px;
-				padding: 5px;
 			}
 			
-			#news a {
-				text-decoration: none;
-				color: #653B00;
-			}
-			
-			#news li {
+			#hrefs ul li {
 				border-bottom: 1px solid #ccc;
-				line-height: 35px;
+				line-height: 45px;
 			}
 			
-			#doorshop {
-				width: 280px;
-				height: 180px;
-				background: url(img/door.png);
-				background-size: 100% 100%;
-				position: absolute;
-				left: 783px;
-				top: 750px;
-				border: 1px solid #ccc;
+			#hrefs ul li a {
+				font-size: 17px;
+				text-decoration: none;
+				color: black;
+				font-family: "Microsoft YaHei";
 			}
 			
-			#shejiao {
-				border: 1px solid #CCCCCC;
-				position: absolute;
-				top: 1350px;
-				left: 1064px;
-				width: 300px;
-			}
-			
-			#shejiao img {
-				width: 100px;
-				/*float: left;*/
-				height: 140px;
-				cursor: pointer;
-			}
-			
-			#sina2d {
-				width: 300px;
-				border: 1px solid #CCCCCC;
-				position: absolute;
-				left: 1064px;
-				top: 1480px;
-				display: none;
-			}
-			
-			#tencent2d {
-				width: 300px;
-				border: 1px solid #CCCCCC;
-				position: absolute;
-				left: 1064px;
-				top: 1480px;
-				display: none;
-			}
-			
-			#wechat2d {
-				width: 300px;
-				border: 1px solid #CCCCCC;
-				position: absolute;
-				left: 2564px;
-				top: 1480px;
-				display: none;
-			}
-			
-			#snack {
-				width: 207px;
-				height: 880px;
-				border: 1px solid #ccc;
-				position: absolute;
-				top: 750px;
-				left: 1366px;
-				overflow: scroll;
-				overflow-x: hidden;
-			}
-			
-			#snack img {
-				width: 207px;
-			}
-			
-			#starshop {
-				width: 405px;
-				padding: 5px;
-				border: 1px solid #ccc;
-				margin-left: 75px;
-			}
-			
-			#jieshao {
-				width: 561px;
-				height: 350px;
-				padding: 5px;
-				border: 1px solid #ccc;
-				background: url(img/index_brand_bg.png);
-				background-size: 100% 100%;
-				position: absolute;
-				top: 1215px;
-				left: 492px;
+			#hrefs ul li a:hover {
+				color: red;
 			}
 			
 			#floatwindow {
@@ -139,6 +46,15 @@
 				top: 30%;
 				right: 0%;
 				z-index: 999;
+			}
+			
+			#inwrap1 {
+				position: absolute;
+				top: 170px;
+				left: 300px;
+			}
+			.swiper-slide{
+				width: 1275px;
 			}
 		</style>
 	</head>
@@ -187,7 +103,7 @@
 
 			</div>
 			<div id="menu4">
-				
+
 				<a href="huodong.html">促销活动</a>|
 				<a href="shangshi.html">新品上市</a>|
 				<a href="hangye.html">行业新闻</a>
@@ -221,14 +137,39 @@
 
 		</div>
 		<div id="wrap">
-			<!--轮播-->
-			<div style="width: 1498px;margin-left: 75px;border: 1px solid #ccc;" class="swiper-container">
-				<div style="width: 1498px;" class="swiper-wrapper">
+			<div id="xuanqu">
+				<div id="gy">
+					<h2 style="font-family: 'Microsoft YaHei';margin-left: 30px;margin-top: 30px;">吉祥动态</h2>
 
-					<img class="swiper-slide" src="img/20160706012055978.jpg" />
-					<img class="swiper-slide" src="img/20141127111148350.jpg" />
-					<img class="swiper-slide" src="img/20141202010231796.jpg" />
-					<img class="swiper-slide" src="img/20160901042959560.jpg" />
+				</div>
+				<div id="hrefs">
+					<ul>
+						<li>
+							<a href="huodong.html">促销活动</a>
+						</li>
+						<li>
+							<a style="color: red;"href="shangshi.html">新品上市</a>
+						</li>
+						<li>
+							<a href="hangye.html">行业新闻</a>
+						</li>
+					</ul>
+				</div>
+				<div id="">
+					<a href="index.html"><img style="border: 1px solid #CCCCCC;margin-left:75px ;width: 198px;" src="img/20141208040034183.jpg" /></a>
+				</div>
+				<div id="">
+					<a href=".html"><img style="width: 200px;margin-left: 75px;" src="img/20141105092315509.jpg" /></a>
+				</div>
+			</div>
+			<div id="inwrap1">
+				<div style="width: 1275px;border: 1px solid #ccc;" class="swiper-container">
+				<div style="width: 1275px;" class="swiper-wrapper">
+
+					<img class="swiper-slide" src="img/20141204033352958.jpg" />
+					<img class="swiper-slide" src="img/20141125112233237.jpg" />
+					<img class="swiper-slide" src="img/20141125113712609.jpg" />
+					<img class="swiper-slide" src="img/20141127011736446.jpg" />
 
 				</div>
 				<div class="swiper-pagination">
@@ -241,97 +182,11 @@
 
 				</div>
 			</div>
-
-			<div id="fastnews">
-				<img style="position: absolute;top:708px;left: 130px;" src="img/kuaixun1.png" />
-				<a style="font-size: 17px;text-decoration: none;color: #653B00;margin-left: 190px;" href="">石家庄新华区天河悦城店吉祥馄饨·面盛大开业啦！</a>
-				<a style="position: absolute;top:698px;left: 1470px;" href=""><img src="img/more.png" /></a>
 			</div>
-			<div id="inwrap">
-				<ul id="news">
-					<li>
-						<h3 style="display: inline-block;">吉祥动态</h3>
-						<a style="display: inline-block;margin-left: 90px;" href="">more</a>
-					</li>
-					<li>
-						<a href="">供应链体系是未来90%的连锁餐饮......</a>
-					</li>
-					<li>
-						<a href="">馄饨的包法大全全国各地包馄饨技......</a>
-					</li>
-					<li>
-						<a href="">山东滨州吉祥馄饨加盟北漂农民工......</a>
-					</li>
-					<li>
-						<a href="">辽阳市新城医院店吉祥馄饨面盛大......</a>
-					</li>
-					<li>
-						<a href="">鞍山市海城大市场一店吉祥馄饨面......</a>
-					</li>
-				</ul>
-				<a href=""><img style="border: 1px solid #ccc;margin-left: 75px;width: 230px;" src="img/20141208040034183.jpg" /></a>
-				<a style="position: absolute;top: 750px;" href=""><img style="width: 475px;border: 1px solid #ccc;" src="img/20150129113848601.jpg" /></a>
-				<div id="doorshop">
-					<span style="font-size:39px;position: absolute;top: 65px;left: 140px;" id="">2189</span>
-				</div>
-				<a style="position: absolute;left: 783px;top: 930px;" href=""><img style="width: 280px;height:140px;border: 1px solid #ccc;" src="img/20141205095629232.jpg" /></a>
-				<a style="position: absolute;left: 783px;top: 1070px;" href=""><img style="width: 280px;height:143px;border: 1px solid #ccc;" src="img/20141211023248852.jpg" /></a>
-				<img id="video" style="position: absolute;top: 750px;left: 1064px;width:300px;cursor: pointer;border: 1px solid #ccc;" src="img/20141109080716237.jpg" />
-				<a style="position: absolute;top: 1000px;left: 1064px;" href=""><img style="width:300px;cursor: pointer;border: 1px solid #ccc;" src="img/index_jiameng.png" /></a>
-				<a style="position: absolute;top: 1245px;left: 1064px;" href=""><img style="width:300px;cursor: pointer;border: 1px solid #ccc;" src="img/zaixianshenqing.png" /></a>
-				<div id="shejiao">
-					<img id="sina" src="img/t1.png" />
-					<img id="weibo" src="img/t2.png" />
-					<img style="position: absolute;top: 0px;left: 200px;" id="wechat" src="img/t3.png" />
-				</div>
-				<img id="sina2d" src="img/20141121105442284.jpg" />
-				<img id="tencent2d" src="img/20141121105410956.png" />
-				<img id="wechat2d" src="img/20160803084744602.png" />
-				<a style="position:absolute;left: 1064px;top: 1480px;" href=""><img style="width: 300px;border: 1px solid #ccc;" src="img/qa.png" /></a>
-				<div id="snack">
-					<img src="img/049bf801a10bbf91a6dd7bd5c3f1c726.jpg" />
-					<img src="img/0a53517d2fc830f933949fa0a72ce2ac.jpg" />
-					<img src="img/34a56652090caafef011345c86ba54a4.jpg" />
-					<img src="img/458b85502766ada519d1c2f5538edf55.jpg" />
-					<img src="img/91fa6de03ac1c354d32ee5a62d56269c.jpg" />
-					<img src="img/a42ccf61716f361b5bf960cf82c9f3c1.jpg" />
-					<img src="img/tiebanshao1.jpg" />
-					<img src="img/tiebanshao2.jpg" />
-					<img src="img/tiebanshao3.jpg" />
-					<img src="img/tiebanshao4.jpg" />
-					<img src="img/tiebanshao5.jpg" />
-					<img src="img/tiebanshao6.jpg" />
-				</div>
-				<ul id="starshop">
-					<li>
-						<h2 style="display: inline-block;">明星店铺</h2>
-						<a style="display: inline-block;margin-left: 240px;" href="">more</a>
-					</li><br />
-					<li><img style="width: 400px;" src="img/20160628094651456.jpg" /></li><br />
-					<li>
-						<h3>东营市北一路店</h3></li>
-				</ul>
-				<ul id="jieshao">
-					<li>
-						<h2 style="display: inline-block;">企业介绍</h2>
-						<a style="display: inline-block;margin-left: 340px;" href="">more</a>
-					</li><br />
-					<li>
-						<h3>全国餐饮连锁经营龙头企业</h3></li>
-					<li>
-						<h3>全国2000多家门店</h3></li><br />
-					<li>
-						<p style="width: 220px;">“吉祥馄饨•面”在青岛火车站附近设立了第一间门店。经过多年的发展，品牌连锁店至今已经遍布山东河北北京天津河南江苏吉林黑龙江辽宁等十八个省市......</p>
-					</li>
-				</ul>
 
-			</div>
 		</div>
-		<div id="floatwindow">
-			<a href="http://pqt.zoosnet.net/LR/Chatpre.aspx?id=PQT81906389&cid=1482201469100592681262&lng=cn&sid=1482201469100592681262&p=http%3A//www.jixiang-china.cn/&rf1=http%3A//www.jixiang-china&rf2=.cn/jieshao/&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&d=1482206150972"><img src="img/onlineimgsrc_cn.png" /></a>
-			<p style="text-align: center;cursor: pointer;" id="close1">关闭</p>
-		</div>
-		<div id="footer">
+
+		<div style="margin-top:20px ;" id="footer">
 			<div class="friendlink">
 
 				友情链接（QQ:1655136520）：
@@ -372,6 +227,10 @@
 				<a href="http://www.dike8.com" target="_blank">地摊网</a>&nbsp; |
 
 			</div>
+			<div id="floatwindow">
+				<a href="http://pqt.zoosnet.net/LR/Chatpre.aspx?id=PQT81906389&cid=1482201469100592681262&lng=cn&sid=1482201469100592681262&p=http%3A//www.jixiang-china.cn/&rf1=http%3A//www.jixiang-china&rf2=.cn/jieshao/&e=%25u6765%25u81EA%25u9996%25u9875%25u7684%25u5BF9%25u8BDD&d=1482206150972"><img src="img/onlineimgsrc_cn.png" /></a>
+				<p style="text-align: center;cursor: pointer;" id="close1">关闭</p>
+			</div>
 			<img style="display: inline-block;" src="img/20141104101841869.png" />
 			<div class="bottomdibu">
 				<div style="margin-left:50px ;" class="bottom_wenzi">招商加盟热线：400-618-0088 &nbsp;鲁ICP备16002511号-1 <br>主关键词：
@@ -400,10 +259,8 @@
 	</body>
 
 </html>
-<!--swiper引入-->
-<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/nav.js" type="text/javascript" charset="utf-8"></script>
-<!--swiper操作-->
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 	var swiper = new Swiper(".swiper-container", {
 		pagination: ".swiper-pagination",
