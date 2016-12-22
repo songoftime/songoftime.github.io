@@ -2,8 +2,8 @@ html {
 				font-size: 20px;
 				
 			}
-			body{
-				overflow-x:hidden; 
+			#wrap{
+				overflow-x: hidden;
 			}
 			
 			#nav {
