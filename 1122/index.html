@@ -162,6 +162,18 @@
 					transform: rotateZ(1000000deg);
 				}
 			}
+			@-moz-keyframes rotate {
+				0% {
+					transform: rotateZ(10000deg);
+					transform-origin: right top;
+				}
+			}
+			
+			@-moz-keyframes rotate1 {
+				0% {
+					transform: rotateZ(1000000deg);
+				}
+			}
 		</style>
 	</head>
 
@@ -289,8 +301,8 @@
 
 			</div>
 		</div>
-		<img style="width: 1.5rem;position: absolute;z-index:101;animation: rotate1 10000s infinite linear;right: 0;bottom: 0;" id="mp3btn" src="img/8.png" />
-		<img style="width: 1.5rem;position: absolute;z-index:101;right: 0;bottom: 0;display: none;" id="mp3btn1" src="img/9.png" />
+		<img style="width: 1.5rem;position: absolute;z-index:101;animation: rotate1 10000s infinite linear;right: 0.4rem;bottom: 0.4rem;" id="mp3btn" src="img/8.png" />
+		<img style="width: 1.5rem;position: absolute;z-index:101;right: 0.4rem;bottom: 0.4rem;display: none;" id="mp3btn1" src="img/9.png" />
 		<audio src="css/1.mp3" loop="" id="music1"></audio>
 	</body>
 
