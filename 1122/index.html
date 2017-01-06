@@ -132,21 +132,22 @@
 				font-size: 1.5rem;
 				color: white;
 			}
+			
 			.show1 {
 				width: 14rem;
 				font-size: 0.9rem;
-				
 			}
+			
 			@keyframes rotate {
 				0% {
 					transform: rotateZ(10000deg);
 					transform-origin: right top;
 				}
 			}
+			
 			@keyframes rotate1 {
 				0% {
 					transform: rotateZ(1000000deg);
-					
 				}
 			}
 		</style>
@@ -276,9 +277,9 @@
 
 			</div>
 		</div>
-		<img style="width: 1.5rem;position: absolute;z-index:101;animation: rotate1 10000s infinite linear;right: 0;bottom: 0;" id="mp3btn" src="img/8.png"/>
-		<img style="width: 1.5rem;position: absolute;z-index:101;right: 0;bottom: 0;display: none;" id="mp3btn1" src="img/9.png"/>
-		<audio src="css/1.mp3" autoplay="" loop="" id="music1"></audio>
+		<img style="width: 1.5rem;position: absolute;z-index:101;animation: rotate1 10000s infinite linear;right: 0;bottom: 0;" id="mp3btn" src="img/8.png" />
+		<img style="width: 1.5rem;position: absolute;z-index:101;right: 0;bottom: 0;display: none;" id="mp3btn1" src="img/9.png" />
+		<audio src="css/1.mp3" loop="" id="music1"></audio>
 	</body>
 
 </html>
@@ -313,23 +314,24 @@
 </script>
 <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	
-
 	window.onload = function() {
 		setTimeout(function() {
-			$("#zhezhao").hide(1000);
+			$("#zhezhao").animate({
+				left: "-15rem"
+			});
+			music1.play();
 		}, 3500);
 	}
 </script>
 <script type="text/javascript">
 	var ss = 8;
 	var sss = 9;
-	$("#mp3btn").on("touchstart",function(){
+	$("#mp3btn").on("touchstart", function() {
 		$("#mp3btn")[0].style.display = "none";
 		$("#mp3btn1")[0].style.display = "block";
 		music1.pause();
 	});
-	$("#mp3btn1").on("touchstart",function(){
+	$("#mp3btn1").on("touchstart", function() {
 		$("#mp3btn1")[0].style.display = "none";
 		$("#mp3btn")[0].style.display = "block";
 		music1.play();
