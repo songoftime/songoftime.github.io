@@ -356,20 +356,21 @@
 																	oShow8.innerHTML += str8.charAt(p++);
 																	if(p == str8.length) {
 																		clearInterval(timer8);
+																		$("#show1").hide(1000);
+																		$("#show2").hide(1000);
+																		$("#show3").hide(1000);
+																		$("#show4").hide(1000);
+																		$("#show5").hide(1000);
+																		$("#show6").hide(1000);
+																		$("#show7").hide(1000);
+																		$("#show8").hide(1000);
+																		
 																		if(q == str9.length) return;
 																		var timer9 = setInterval(function() {
 																			oShow9.innerHTML += str9.charAt(q++);
 																			if(q == str9.length) {
 																				clearInterval(timer9);
-																				$("#show1").hide(1000);
-																						$("#show2").hide(1000);
-																						$("#show3").hide(1000);
-																						$("#show4").hide(1000);
-																						$("#show5").hide(1000);
-																						$("#show6").hide(1000);
-																						$("#show7").hide(1000);
-																						$("#show8").hide(1000);
-																						$("#show9").hide(1000);
+																				
 																						
 																				if(r == str10.length) return;
 																				var timer10 = setInterval(function() {
