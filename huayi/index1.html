@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-controller="ctrl">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>华艺广告字牌</title>
+		<style type="text/css">
+			html,body{
+				font-size: 20px;
+			}
+		</style>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+		<script src="css/angular.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/angular-route.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body class="container-fluid">
+		<div id="nav" role="navigation" style="position: fixed;width: 15rem;z-index: 100;left: .5rem;" class="navbar navbar-inverse">
+			<a href="#/index" class="navbar-brand" id="logo"><img style="width: 40px;" ng-click="ss()" src="img/logo.png" /></a>
+			<img class="pull-right" style="margin-right: 10px;margin-top: 10px;" src="img/menu.png" ng-click="none()" id="menu" />
+		</div>
+		<div ng-show="show" style="background: rgba(0,0,0,0.7);width: 15rem;height: 700px;position: fixed;top: 50px;z-index: 100;left: 0.5rem;" id="menus">
+			<a href="#/anli" ng-click="none();hide();" class="btn btn-lg btn-block btn-link" style="color: white;margin-top: 5rem;">华艺案例</a>
+			<a href="#/chengyuan" ng-click="none();hide();" class="btn btn-lg btn-block btn-link" style="color: white;">华艺成员</a>
+			<a href="#/guanyu" ng-click="none();hide();" class="btn btn-lg btn-block btn-link" style="color: white;">关于华艺</a>
+			<a href="#/lianxi" ng-click="none();hide();" class="btn btn-lg btn-block btn-link" style="color: white;">联系我们</a>
+			<a href="#/jiaru" ng-click="none();hide();" class="btn btn-lg btn-block btn-link" style="color: white;">加入华艺</a>
+		</div>
+		<div ng-show="show1" style="z-index: 99;position: absolute;top: 2rem;left: 0;margin-left:.5rem ;" class="swiper-container">
+			<div style="width: 15rem;"class="swiper-wrapper">
+
+				<img class="swiper-slide" style="height: 7rem;" src="img/psb (1).jpeg" />
+				<img class="swiper-slide" style="height: 7rem;" src="img/psb (5).jpeg" />
+				<img class="swiper-slide" style="height: 7rem;" src="img/psb.jpeg" />
+
+			</div>
+			<div class="swiper-pagination">
+
+			</div>
+
+		</div>
+		<ng-view></ng-view>
+	</body>
+
+</html>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+	var app = angular.module("myApp", ["ngRoute"]);
+	//配置路由
+	app.controller("ctrl", function($scope, $rootScope) {
+		$scope.show = false;
+		$scope.show1 = true;
+		$scope.none = function() {
+			if($scope.show) {
+				$scope.show = false;
+			} else {
+				$scope.show = true;
+			}
+
+		}
+		$scope.hide = function() {
+			$scope.show1 = false;
+
+		}
+		$scope.ss = function() {
+			$scope.show1 = true;
+
+		}
+		
+	});
+	//配置路由信息
+	app.config(function($routeProvider) {
+		$routeProvider.when("/anli", {
+			templateUrl: "anli.html"
+		});
+		$routeProvider.when("/lianxi", {
+			templateUrl: "lianxi.html"
+		});
+		$routeProvider.when("/chengyuan", {
+			templateUrl: "chengyuan.html"
+		});
+		$routeProvider.when("/guanyu", {
+			templateUrl: "guanyu.html"
+		});
+		$routeProvider.when("/jiaru", {
+			templateUrl: "jiaru.html"
+		});
+		$routeProvider.otherwise({
+			templateUrl: "jieshao.html"
+		});
+		
+
+	});
+	app.config(['$locationProvider', function($locationProvider) {
+		$locationProvider.hashPrefix("");
+	}]);
+	
+</script>
+<script type="text/javascript">
+	var scale = 0;
+
+	function fit() {
+		scale = document.documentElement.clientWidth / 320 * 20;
+		$("html").css({
+			fontSize: scale + "px"
+		});
+	}
+	fit();
+	window.onresize = function() {
+		fit();
+	}
+</script>
+<script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	function swiper1(){
+		var swiper = new Swiper(".swiper-container", {
+		pagination: ".swiper-pagination",
+		//点击小点滑动图片
+		paginationClickable: '.swiper-pagination',
+		// 每页之间的间隔
+		spaceBetween: 1,
+		loop: true,
+		autoplay: 2200,
+		autoplayDisableOnInteraction: false
+	});
+	}
+	window.onload = function(){
+		swiper1();
+	}
+</script>

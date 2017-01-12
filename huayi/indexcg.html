@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>华艺广告字牌</title>
+		<script src="css/angular.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			html,
+			body {
+				font-size: 20px;
+			}
+			
+			@font-face {
+				font-family: xk;
+				src: url(css/华文行楷.ttf);
+			}
+			
+			@font-face {
+				font-family: zy;
+				src: url(css/方正综艺简体.ttf);
+			}
+			
+			h1 {
+				font-size: 1.5rem;
+			}
+			
+			h2 {
+				font-size: 1.1rem;
+			}
+			/*#ico1,#ico2,#ico3,#ico4{
+				display: none;
+			}*/
+			/*#page1,#page2,#page3,#page4 {
+				display: none;
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<div style="z-index: 50;position: absolute;left: 0;top: 0;width: 100%;height: 100%;" id="page1">
+			<img style="width: 100%;height: 100%;position: absolute;left: 0;top: 0;" src="img/bg1.jpg" />
+			<div style="width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;left: 0;top: 0;" id="zhezhao1">
+				<img id="logo" style="width: 5rem;position: absolute;left: 5.5rem;top: -5rem;" src="img/logo.png" />
+				<h1 id="p1" style="font-family: xk;font-size:1rem;color: white;position: absolute;left: 4.5rem;top: -11rem;">创/意/无/处/不/在</h1>
+				<span style="color: white;position:absolute;font-size: .5rem;font-family:'microsoft yahei';margin-left:5rem;margin-top: 14rem;" id="p2">
+					
+				</span>
+			</div>
+			<img style="width: 4rem;height: 1.5rem;position: absolute;left: 6rem;bottom: 1rem;z-index: 50;" id="btn1" src="img/sanjiao.png" />
+		</div>
+		<div style="z-index: 40;position: absolute;left: 0;top: 0;width: 100%;height: 100%;" id="page2">
+			<img style="width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 40;" src="img/bg2.jpg" />
+			<div style="width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;left: 0;top: 0;z-index: 40;" id="zhezhao2">
+				<img style="width: 5rem;margin-left: 2rem;margin-right: 2rem;margin-top: 7rem;" id="ico1" src="img/ico1.png" />
+				<img id="ico2" style="width: 5rem;margin-top: 7rem;" src="img/ico2.png" />
+				<img id="ico3" style="width: 5rem;margin-left: 2rem;margin-right: 2rem;margin-top: 3rem;" src="img/ico3.png" />
+				<img id="ico4" style="width: 5rem;margin-top: 3rem;" src="img/ico4.png" />
+				<span style="font-size: .5rem;color: #eee;position: absolute;top: 2rem;left: 6rem;" id="p3">
+					
+				</span>
+				<span style="font-size: 1rem;color: #eee;position: absolute;top: 3rem;left: 5.2rem;" id="p4">
+					
+				</span>
+				<span style="font-size: .5rem;color: #eee;position: absolute;top: 12rem;left: -13.5rem;" id="ico1p">
+					网站设计
+				</span>
+				<span style="font-size: .5rem;color: #eee;position: absolute;top: 12rem;right: -13.2rem;" id="ico2p">
+					字牌制作
+				</span>
+				<span style="font-size: .5rem;color: #eee;position: absolute;top: 19.3rem;left: -13.5rem;" id="ico3p">
+					Logo设计
+				</span>
+				<span style="font-size: .5rem;color: #eee;position: absolute;top: 19.3rem;right: -13.4rem;" id="ico4p">
+					H5广告
+				</span>
+			</div>
+			<img style="width: 4rem;height: 1.5rem;position: absolute;left: 6rem;bottom: 1rem;z-index: 40;" id="btn2" src="img/sanjiao.png" />
+		</div>
+		<div style="z-index: 30;position: absolute;left: 0;top: 0;width: 100%;height: 100%;" id="page3">
+			<img style="width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 30;" src="img/bg3.jpg" />
+			<div style="width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;left: 0;top: 0;z-index: 30;" id="zhezhao3">
+				<div style="width: 14rem;height: 4rem;background: url(img/cgtitle.png);background-size: 100% 100%;position:absolute;left: 1rem;top: -5rem;" id="title1">
+					<h1 style="color: #0E773A;font-family: zy;text-align: center;margin-top:0.5rem ;">华艺阵容</h1>
+					<span style="font-size: .5rem;color: #0E773A;position: absolute;left: 5.3rem;top: 2.3rem;" id="">HUAYI'S TEAM</span>
+				</div>
+				<div style="width: 15rem;height: 4.5rem;background: url(img/kuang.png);background-size: 100% 100%;position: absolute;left: -25rem;top: 5rem;" id="person1">
+					<img style="width: 3.7rem;height: 3.7rem;position: absolute;left: .5rem;top: .5rem;" src="img/sdol.png" />
+					<h2 style="color: #0E774A;position: absolute;left: 5rem;top: .3rem;">灸舞</h2>
+					<p style="color: #0E774A;font-size: .7rem;position:absolute;left:5rem;top:2rem;width: 9rem;font-family:'microsoft yahei'">华艺首席设计师,精通网站设计制作</p>
+				</div>
+				<div style="width: 15rem;height: 4.5rem;background: url(img/kuang.png);background-size: 100% 100%;position: absolute;left: -25rem;top: 10rem;" id="person2">
+					<img style="width: 3.7rem;height: 3.7rem;position: absolute;left: .5rem;top: .5rem;" src="img/sdol.png" />
+					<h2 style="color: #0E774A;position: absolute;left: 5rem;top: .3rem;">老于</h2>
+					<p style="color: #0E774A;font-size: .7rem;position:absolute;left:5rem;top:2rem;width: 9rem;font-family:'microsoft yahei'">精通CDR等制图软件,精通大型雕刻机器操作</p>
+				</div>
+				<div style="width: 15rem;height: 4.5rem;background: url(img/kuang.png);background-size: 100% 100%;position: absolute;left: -25rem;top: 15rem;" id="person3">
+					<img style="width: 3.7rem;height: 3.7rem;position: absolute;left: .5rem;top: .5rem;" src="img/sdol.png" />
+					<h2 style="color: #0E774A;position: absolute;left: 5rem;top: .3rem;">榕树</h2>
+					<p style="color: #0E774A;font-size: .7rem;position:absolute;left:5rem;top:2rem;width: 9rem;font-family:'microsoft yahei'">精通PS等制图软件,WEB前端开发组长</p>
+				</div>
+				<div style="width: 15rem;height: 4.5rem;background: url(img/kuang.png);background-size: 100% 100%;position: absolute;left: -25rem;top: 20rem;" id="person4">
+					<img style="width: 3.7rem;height: 3.7rem;position: absolute;left: .5rem;top: .5rem;" src="img/sdol.png" />
+					<h2 style="color: #0E774A;position: absolute;left: 5rem;top: .3rem;">灸柒</h2>
+					<p style="color: #0E774A;font-size: .7rem;position:absolute;left:5rem;top:2rem;width: 9rem;font-family:'microsoft yahei'">运营,数年运营经验</p>
+				</div>
+			</div>
+			<img style="width: 4rem;height: 1.5rem;position: absolute;left: 6rem;bottom: 1rem;z-index: 30;" id="btn3" src="img/sanjiao.png" />
+		</div>
+		<div style="z-index: 20;position: absolute;left: 0;top: 0;width: 100%;height: 100%;" id="page4">
+			<img style="width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 20;" src="img/bg4.jpg" />
+			<div style="width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;left: 0;top: 0;z-index: 20;" id="zhezhao4">
+				<span style="color: #ccc;left: 6rem;top:2rem;font-size: .5rem;position: absolute;" id="p4t1">
+					
+				</span>
+				<h2 id="p4t2" style="color: #ccc;left: 5.8rem;top:3rem;position: absolute;"></h2>
+				<div style="width: 15rem;background: url(img/kuang.png);background-size: 100% 100%;position: absolute;left: 0.5rem;top: 5rem;display: none;" id="hy1">
+					<h3 style="color: #007AFF;margin-left: .5rem;margin-top: .2rem;font-size: 1rem;">WHO</h3>
+					<p id="hy1p" style="color: #0E774A;font-size: .5rem;margin-left: .5rem;margin-right: .5rem;margin-bottom: .2rem;display: none;">华艺秉承以市场为先导的理念，以"策略化+视觉化"的创意设计解决方案，正积极推动国际、国内品牌的飞速发展。2005年成立至今，凭借独特的创意思维触觉和视觉传达直觉，迅速成为企业形象策划、品牌视觉战略及公关服务的专业机构。服务领域覆盖互联网、金融、电子机械等。</p>
+
+				</div>
+				<div style="width: 15rem;background: url(img/kuang.png);background-size: 100% 100%;position: absolute;left: 0.5rem;top: 13.5rem;display: none;" id="hy2">
+					<h3 style="color: #007AFF;margin-left: .5rem;margin-top: .2rem;font-size: 1rem;">WHAT</h3>
+					<p id="hy2p" style="color: #0E774A;font-size: .5rem;margin-left: .5rem;margin-right: .5rem;margin-bottom: .2rem;display: none;">华艺主要为客户提供专业的界面设计、网页设计和平面设计。<br /> • 界面设计：网站设计、H5广告等；<br /> • 平面设计：广告设计、海报设计等；<br /> • 字牌制作：亚克力胸章、精工字等；<br />
+					</p>
+				</div>
+
+			</div>
+			<img style="width: 4rem;height: 1.5rem;position: fixed;left: 6rem;bottom: 1rem;z-index: 20;" id="btn4" src="img/sanjiao.png" />
+		</div>
+		<div style="z-index: 10;position: absolute;left: 0;top: 0;width: 100%;height: 100%;" id="page5">
+			<img style="width: 100%;height: 100%;position: absolute;left: 0;top: 0;z-index: 10;" src="img/bg5.jpg" />
+			<div style="width: 100%;height: 100%;background: rgba(0,0,0,0.5);position: absolute;left: 0;top: 0;z-index: 10;" id="zhezhao5">
+				<div style="width: 100%;height: 50%;background: rgba(0,0,0,.1);position: absolute;top: 0;left: -100%;" id="p5t">
+					<h1 style="color: white;margin-left: 3.1rem;margin-top: .5rem;">CONTACT US</h1>
+					<h3 style="color: white;margin-left: 4.55rem;margin-top:4rem;font-size: .7rem;">华艺广告设计制作团队</h3>
+					<span style="color: white;margin-left: 4.55rem;margin-top:4rem;font-size: .5rem;">Huayi Advertising Design Team</span>
+				</div>
+				<div style="width: 100%;height: 50%;background: #aaa;position: absolute;top: 50%;left: 100%;" id="p5b">
+					<span style="color: white;left: 4.7rem;top: 2.7rem;font-size:.5rem;position: absolute;">全国咨询热线:13371540053</span>
+					<span style="color: white;left: 4.5rem;top: 4.7rem;font-size:.5rem;position: absolute;">E-mail：2564309219@qq.com</span>
+					<a style="text-align: center;width: 10rem;height: 1rem;font-size: .5rem;background: #004499;line-height: 1rem;position: absolute;top: 6.7rem;left: 3rem;color: #ccc;text-decoration: none;" href="index1.html">点此进入首页</a>
+				</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var scale = 0;
+
+	function fit() {
+		scale = document.documentElement.clientWidth / 320 * 20;
+		$("html").css({
+			fontSize: scale + "px"
+		});
+	}
+	fit();
+	window.onresize = function() {
+		fit();
+	}
+</script>
+<!--按钮-->
+<script type="text/javascript">
+	$("#btn1").on("touchstart", function() {
+		$("#page1").animate({
+			top: "-30rem"
+		}, 500);
+		setTimeout(page2(), 30)
+	});
+	$("#btn2").on("touchstart", function() {
+		$("#page2").animate({
+			top: "-30rem"
+		}, 500);
+		setTimeout(page3(), 130)
+	});
+	$("#btn3").on("touchstart", function() {
+		$("#page3").animate({
+			top: "-30rem"
+		}, 500);
+		page4();
+	});
+	$("#btn4").on("touchstart", function() {
+		$("#page4").animate({
+			top: "-30rem"
+		}, 500);
+		page5();
+	});
+	//第二页
+	function page2() {
+		var b = 0
+		var c = 0
+		var str2 = "WHAT CAN WE DO";
+		var str3 = "我们能做什么";
+
+		if(b == str2.length) return;
+		var timer2 = setInterval(function() {
+			$("#p3")[0].innerHTML += str2.charAt(b++);
+			if(b == str2.length) {
+				clearInterval(timer2);
+			}
+		}, 100);
+		if(c == str3.length) return;
+		var timer3 = setInterval(function() {
+			$("#p4")[0].innerHTML += str3.charAt(c++);
+			if(c == str3.length) {
+				clearInterval(timer3);
+			}
+		}, 200);
+		setTimeout(function() {
+			$("#ico1p").animate({
+				left: "3.5rem"
+			}, 400);
+			$("#ico2p").animate({
+				right: "3.2rem"
+			}, 400);
+			$("#ico3p").animate({
+				left: "3.5rem"
+			}, 400);
+			$("#ico4p").animate({
+				right: "3.4rem"
+			}, 400);
+		}, 1040);
+
+	}
+	//第三页
+	function page3() {
+		$("#title1").animate({
+			top: "0rem"
+		}, 1500);
+		setTimeout(function() {
+			$("#person1").animate({
+				left: "0.5rem"
+			}, 2000);
+		}, 140);
+		setTimeout(function() {
+			$("#person2").animate({
+				left: "0.5rem"
+			}, 2000);
+		}, 280);
+		setTimeout(function() {
+			$("#person3").animate({
+				left: "0.5rem"
+			}, 2000);
+		}, 420);
+		setTimeout(function() {
+			$("#person4").animate({
+				left: "0.5rem"
+			}, 2000);
+		}, 560);
+	}
+	//第四页
+	function page4() {
+		setTimeout(function() {
+			var d = 0
+			var e = 0
+			var str4 = "OUR ADVANTAGE";
+			var str5 = "关于我们";
+
+			if(d == str4.length) return;
+			var timer4 = setInterval(function() {
+				$("#p4t1")[0].innerHTML += str4.charAt(d++);
+				if(d == str4.length) {
+					clearInterval(timer4);
+				}
+			}, 100);
+			if(e == str5.length) return;
+			var timer5 = setInterval(function() {
+				$("#p4t2")[0].innerHTML += str5.charAt(e++);
+				if(e == str5.length) {
+					clearInterval(timer5);
+				}
+			}, 200);
+			$("#hy1").show(1500);
+
+			$("#hy2").show(1500);
+			setTimeout(function() {
+				$("#hy1p").show(1000);
+
+				$("#hy2p").show(1000);
+			}, 1500)
+		}, 500);
+	}
+	//第五页
+	function page5(){
+		setTimeout(function() {
+			$("#p5t").animate({
+				left: "0rem"
+			}, 2000);
+			$("#p5b").animate({
+				left: "0rem"
+			}, 2000);
+		}, 1000);
+	}
+	
+</script>
+<!--第一页-->
+<script type="text/javascript">
+	var a = 0
+	var str1 = "字牌制作/广告设计/网站设计";
+	setTimeout(function() {
+		$("#logo").animate({
+			top: "5rem"
+		}, 1000);
+	}, 30);
+	setTimeout(function() {
+		$("#p1").animate({
+			top: "11rem"
+		}, 1000);
+	}, 50);
+	setTimeout(function() {
+		if(a == str1.length) return;
+		var timer1 = setInterval(function() {
+			$("#p2")[0].innerHTML += str1.charAt(a++);
+			if(a == str1.length) {
+				clearInterval(timer1);
+			}
+		}, 200);
+
+	}, 70);
+</script>
+<!--第二页-->
