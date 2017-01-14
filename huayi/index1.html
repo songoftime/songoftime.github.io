@@ -5,12 +5,16 @@
 		<meta charset="UTF-8">
 		<title>华艺广告字牌</title>
 		<style type="text/css">
-			html,body{
+			html,
+			body {
 				font-size: 20px;
+			}
+			.al1:hover{
+				opacity: 0;
 			}
 		</style>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
 		<script src="css/angular.js" type="text/javascript" charset="utf-8"></script>
@@ -30,25 +34,13 @@
 			<a href="#/lianxi" ng-click="none();hide();" class="btn btn-lg btn-block btn-link" style="color: white;">联系我们</a>
 			<a href="#/jiaru" ng-click="none();hide();" class="btn btn-lg btn-block btn-link" style="color: white;">加入华艺</a>
 		</div>
-		<!--<div ng-show="show1" style="z-index: 99;position: absolute;top: 2rem;left: 0;margin-left:.5rem ;" class="swiper-container">
-			<div style="width: 15rem;"class="swiper-wrapper">
-
-				<img class="swiper-slide" style="height: 7rem;" src="img/psb (1).jpeg" />
-				<img class="swiper-slide" style="height: 7rem;" src="img/psb (5).jpeg" />
-				<img class="swiper-slide" style="height: 7rem;" src="img/psb.jpeg" />
-
-			</div>
-			<div class="swiper-pagination">
-
-			</div>
-
-		</div>-->
+		
 		<ng-view></ng-view>
 		<div style="width: 15rem;height: 2rem;position: fixed;z-index: 98;bottom: 0;left: .5rem;background: black;" id="">
-			<a style="" href="tel:13356623517"><img style="width: 1.5rem;height: 1rem;margin-left: 1.35rem;margin-top: .3rem;" src="img/电话.png"/></a>
-			<a style="" href="sms:13356623517"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/短信.png"/></a>
-			<a style="" href="mailto:964072922@qq.com"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/邮件.png"/></a>
-			<a style="" ng-click="hide()" href="#/jiaru"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/加入我们.png"/></a>
+			<a style="" href="tel:13356623517"><img style="width: 1.5rem;height: 1rem;margin-left: 1.35rem;margin-top: .3rem;" src="img/电话.png" /></a>
+			<a style="" href="sms:13356623517"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/短信.png" /></a>
+			<a style="" href="mailto:964072922@qq.com"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/邮件.png" /></a>
+			<a style="" ng-click="hide()" href="#/jiaru"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/加入我们.png" /></a>
 		</div>
 	</body>
 
@@ -79,6 +71,16 @@
 		}
 		
 	});
+	app.controller("aa", function($scope, $rootScope) {
+		var swiper = new Swiper(".swiper-container", {
+			
+			// 每页之间的间隔
+			spaceBetween: 1,
+			loop: true,
+			autoplay: 2200,
+			autoplayDisableOnInteraction: false
+		});
+	});
 	//配置路由信息
 	app.config(function($routeProvider) {
 		$routeProvider.when("/anli", {
@@ -100,12 +102,10 @@
 			templateUrl: "jieshao.html"
 		});
 		
-
 	});
 	app.config(['$locationProvider', function($locationProvider) {
 		$locationProvider.hashPrefix("");
 	}]);
-	
 </script>
 <script type="text/javascript">
 	var scale = 0;
@@ -123,19 +123,8 @@
 </script>
 <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	function swiper1(){
-		var swiper = new Swiper(".swiper-container", {
-		pagination: ".swiper-pagination",
-		//点击小点滑动图片
-		paginationClickable: '.swiper-pagination',
-		// 每页之间的间隔
-		spaceBetween: 1,
-		loop: true,
-		autoplay: 2200,
-		autoplayDisableOnInteraction: false
-	});
-	}
-	window.onload = function(){
-		swiper1();
-	}
+	
+		
+	
+	
 </script>
