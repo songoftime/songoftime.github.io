@@ -4,13 +4,14 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>华艺广告字牌</title>
-		<link rel="icon" href="favicon.ico"/>
+		<link rel="icon" href="favicon.ico" />
 		<style type="text/css">
 			html,
 			body {
 				font-size: 20px;
 			}
-			.al1:hover{
+			
+			.al1:hover {
 				opacity: 0;
 			}
 		</style>
@@ -35,20 +36,22 @@
 			<a href="#/lianxi" ng-click="none();hide();" class="btn btn-lg btn-block btn-link" style="color: white;">联系我们</a>
 			<a href="#/jiaru" ng-click="none();hide();" class="btn btn-lg btn-block btn-link" style="color: white;">加入华艺</a>
 		</div>
-		
+
 		<ng-view></ng-view>
 		<div style="width: 15rem;height: 2rem;position: fixed;z-index: 98;bottom: 0;left: .5rem;background: black;" id="">
-			<a style="" href="tel:13356623517"><img style="width: 1.5rem;height: 1rem;margin-left: 1.35rem;margin-top: .3rem;" src="img/电话.png" /></a>
-			<a style="" href="sms:13356623517"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/短信.png" /></a>
-			<a style="" href="mailto:964072922@qq.com"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/邮件.png" /></a>
-			<a style="" ng-click="hide()" href="#/jiaru"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/加入我们.png" /></a>
+			<a href="tel:13356623517"><img style="width: 1.5rem;height: 1rem;margin-left: 1.35rem;margin-top: .3rem;" src="img/phone.png" /></a>
+			<a href="sms:13356623517"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/massage.png" /></a>
+			<a style="" href="mailto:964072922@qq.com"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/email.png" /></a>
+			<a style="" ng-click="hide()" href="#/jiaru"><img style="width: 1.5rem;height: 1.2rem;margin-left: 2rem;margin-top: .3rem;" src="img/joinus.png" /></a>
 		</div>
 	</body>
 
 </html>
 <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-
 <script type="text/javascript">
+</script>
+<script type="text/javascript">
+	
 	var app = angular.module("myApp", ["ngRoute"]);
 	//配置路由
 	app.controller("ctrl", function($scope, $rootScope) {
@@ -70,11 +73,11 @@
 			$scope.show1 = true;
 
 		}
-		
+
 	});
 	app.controller("aa", function($scope, $rootScope) {
 		var swiper = new Swiper(".swiper-container", {
-			
+
 			// 每页之间的间隔
 			spaceBetween: 1,
 			loop: true,
@@ -102,7 +105,7 @@
 		$routeProvider.otherwise({
 			templateUrl: "jieshao.html"
 		});
-		
+
 	});
 	app.config(['$locationProvider', function($locationProvider) {
 		$locationProvider.hashPrefix("");
@@ -124,8 +127,4 @@
 </script>
 <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
-	
-		
-	
-	
 </script>
