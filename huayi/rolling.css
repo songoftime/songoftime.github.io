@@ -1,0 +1,50 @@
+#demoLeft {
+float:left;
+margin:150px 0 0 50px;
+background: #FFF;
+overflow:hidden;
+border: 0px dashed #CCC;
+width: 500px;
+height:150px;
+/*border:5px solid #ccc;*/
+}
+
+#demoTop {
+float:left;
+margin:50px auto;
+background: #FFF;
+overflow:hidden;
+border: 0px dashed #CCC;
+height: 500px;
+width: 150px;
+border:5px solid #ccc;
+}
+
+
+#demoLeft .indemo {
+float: left;
+width: 500%;
+}
+
+#demoTop .indemo {
+float: left;
+width: 100%;
+}
+
+#demo1,#demo3 {
+float: left;
+/*border:5px solid #F00;*/
+}
+#demo2,#demo4 {
+float: left;
+/*border:5px solid #0F0;*/
+}
+
+#demo1 img,#demo2 img,#demo3 img,#demo4 img{
+width:128px;
+height:128px;
+/*border:5px solid #FF0;*/
+}
+
+
+
