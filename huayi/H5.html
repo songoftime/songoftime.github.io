@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>数钱啦!</title>
+		<script type="text/javascript">
+			if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+    			
+	} else if (/(Android)/i.test(navigator.userAgent)) {
+   		 	
+    }else{
+    		window.location.href = "wraning.html";
+    }
+		</script>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<style type="text/css">
+			html {
+				font-size: 20px;
+				overflow: hidden;
+			}
+			
+			html,
+			body {
+				margin: 0;
+				height: 100%;
+				overflow: hidden;
+			}
+			
+			body {
+				width: 100%;
+				height: 100%;
+				/*background: url(images/bg.jpg);
+				background-size: 100%;*/
+			}
+			
+			@keyframes pound {
+				from {
+					transform: none;
+				}
+				50% {
+					transform: scale(1.05);
+				}
+				to {
+					transform: none;
+				}
+			}
+			
+			@keyframes handfly {
+				0% {
+					top: 67%;
+					opacity: 1;
+				}
+				100% {
+					top: 40%;
+					opacity: 0;
+				}
+			}
+			
+			.moneyAni {
+				position: absolute;
+				width: 50%;
+				left: 25%;
+				top: 18rem;
+				z-index: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+		<audio src="audio/bgmusic.mp3" loop="" autoplay="" id="bgm"></audio>
+		<div style="width: 100%;height: 100%;background: url(images/bg.jpg);background-size:100% 100%;z-index: 999;" id="startpage">
+			<img style="width: 70%;margin-left: 20%;margin-top: 15%;" src="images/tiaozhan.png" />
+			<img style="width: 100%;" src="images/yingqu.png" />
+			<img style="width: 40%;animation:pound 1s infinite;position: absolute;left: 30%;top: 55%;" id="start" src="images/start_game.png" />
+			<div style="width: 95%;height: 12%;background: url(images/p1_btns_wrap.png);background-size: 100% 100%;position: absolute;left: 2.5%;top: 85%;" id="banner">
+				<img style="width: 23%;height: 75%;margin-top:0.2rem;margin-left: .3rem;" id="rank" src="images/ranking.png" />
+				<img style="width: 23%;height: 75%;" id="rule" src="images/activity_rule.png" />
+				<img style="width: 23%;height: 75%;" id="prize" src="images/prize.png" />
+				<img style="width: 23%;height: 75%;" id="shiyong" src="images/shiyong.png" />
+			</div>
+
+			<div style="position: fixed;top:0;left:0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);display: none;" id="ranks">
+				<img id="close1" style="position: absolute;top: 19%;left: 75%;" src="images/close.png" />
+				<div style="position: absolute;top:25%;left:17.5%;width: 65%;height: 50%;background: url(images/ranking_bg.png);background-size: 100% 100%;" id="table1">
+
+				</div>
+			</div>
+
+			<div style="position: fixed;top:0;left:0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);display: none;" id="guizes">
+				<img id="close2" style="position: absolute;top: 19%;left: 75%;" src="images/close.png" />
+				<div style="position: absolute;top:25%;left:17.5%;width: 65%;height: 11rem;overflow:scroll;background:#FFE4C4;border-radius: .7rem;border: 2px solid red;" id="table2">
+					<h1 style="text-align: center;margin-top: 1rem;">活动规则</h1>
+					<p style="margin-top: 1rem;padding-left: 1rem;padding-right: 1rem;">1、每人有多次游戏机会，但成绩只能提交一次，且提交之后不能更改！</p>
+					<p style="margin-top: .5rem;padding-left: 1rem;padding-right: 1rem;">2、提交成绩时要提供姓名及手机号码作为兑换凭证，因用户本人未在规定时间内提供正确的手机号码造成的奖品损失，由用户承担。</p>
+					<p style="margin-top: .5rem;padding-left: 1rem;padding-right: 1rem;">3、活动时间为2016年5月11日-5月19日24:00，活动结束后将在“雾灵山庄”微信公布中奖名单。</p>
+					<p style="margin-top: .5rem;padding-left: 1rem;padding-right: 1rem;">4、获奖规则：系统将根据大家提交的成绩，按照由多到少的规则进行排行，排名第1的网友将获得一等奖，排名第2-第21位的网友将分获二等奖，以此类推。</p>
+					<p style="margin-top: .5rem;padding-left: 1rem;padding-right: 1rem;">5、奖品的发放：活动结束后，将由工作人员与您取得联系，并将相应的卡券编号发送到您提供的手机号码上。</p>
+				</div>
+			</div>
+			<div style="position: fixed;top:0;left:0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);display: none;" id="prizes">
+				<img id="close3" style="position: absolute;top: 19%;left: 75%;" src="images/close.png" />
+				<div style="position: absolute;top:25%;left:17.5%;width: 65%;height: 11rem;background:#FFE4C4;border-radius: .7rem;border: 2px solid red;" id="table3">
+					<h1 style="text-align: center;margin-top: 1rem;">活动奖品</h1>
+					<p style="padding-left: 1rem;padding-right: 1rem;">一等奖1人：价值1488元7号楼1晚豪华标间免费房券1张，并可享康体项目3折优惠；</p>
+					<p style="padding-left: 1rem;padding-right: 1rem;">二等奖20人：100元订房代金券每人1张，并可享康体项目4折优惠；</p>
+					<p style="padding-left: 1rem;padding-right: 1rem;">三等奖50人：50元订房代金券每人1张，并可享康体项目5折优惠。</p>
+					<p style="padding-left: 1rem;padding-right: 1rem;">奖品的有效期：2016年5月20日至6月15日（周五、周六及法定节假日不可用）</p>
+
+				</div>
+			</div>
+			<div style="position: fixed;top:0;left:0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);display: none;" id="shuoming1">
+				<img id="close4" style="position: absolute;top: 19%;left: 75%;" src="images/close.png" />
+				<div style="position: absolute;top:25%;left:17.5%;width: 65%;height: 11rem;background:#FFE4C4;border-radius: .7rem;border: 2px solid red;overflow: scroll;" id="table4">
+					<h1 style="text-align: center;margin-top: 1rem;">奖券使用说明</h1>
+					<p style="padding-left: 1rem;padding-right: 1rem;">1、奖品的使用：请务必至少提前一周致电010-81027788或81027799进行预约，并于入住时向前台服务人员出示您手机上收到的卡券编号即可使用（需同时验证获奖人姓名与手机号码）。</p>
+					<p style="padding-left: 1rem;padding-right: 1rem;">2、代金券仅适用于线下门市价入住客房消费使用，不适用于通过携程或微信等其他线上渠道预定使用。</p>
+					<p style="padding-left: 1rem;padding-right: 1rem;">3、免费房安排的房间将视当时酒店排房情况而定，如您所预约的时段预订已满，将与您协商调整入住时间。</p>
+					<p style="padding-left: 1rem;padding-right: 1rem;">4、免费房券及代金券不得用于除订房外其他产品消费，不得与酒店其他优惠折扣或礼券同时使用，且不予退换、兑换现金或找赎。</p>
+					<p style="padding-left: 1rem;padding-right: 1rem;">5、对于恶意刷奖者和作弊者，主办方有权取消其兑奖资格。</p>
+				</div>
+			</div>
+			<div style="position: fixed;top:0;left:0;width: 100%;height: 100%;background: rgba(0,0,0,0.5);display: none;" id="inputm">
+				<img id="close5" style="position: absolute;top: 19%;left: 75%;" src="images/close.png" />
+				<div style="position: absolute;top:25%;left:17.5%;width: 65%;height: 45%;background:url(images/p1_from.png);background-size: 100% 100%;" id="table5">
+					<input style="width:70%;height:12%;margin-left: 15%;margin-top: 35%;font-size: .7rem;background: orange;border: 2px solid red;border-radius: .3rem;" type="text" id="name" value="" name="name" placeholder="姓名" /><br /><br />
+					<input style="width:70%;height:12%;margin-left: 15%;font-size: .7rem;background: orange;border: 2px solid red;border-radius: .3rem;" type="text" id="phone" value="" name="phone" placeholder="电话" /><br /><br />
+					<img id="sub" style="width: 50%;margin-left: 25%;" src="images/p1_sub.png" />
+				</div>
+			</div>
+
+		</div>
+
+		<div style="width: 100%;height: 100%;background: url(images/bg2.png);background-size:100% 100%;overflow-x: hidden;overflow-y:hidden;display: none;" id="wrap">
+			<img style="width: 50%;position: absolute;bottom: -20%;left: 25%;z-index: 97;" id="money" src="images/p2_qian.jpg" />
+			<img style="width: 100%;position: absolute;bottom: 0;z-index: 99;" src="images/p2_zhuan.png" />
+			<img style="width: 40%;position: absolute;top: 67%;left: 60%;animation: handfly 1.7s infinite;z-index: 98;" src="images/p2_shou.png" />
+			<img style="width: 80%;position: absolute;top: 10%;left: 10%;" src="images/p2_kuang.png" />
+			<img id="txt" style="width: 11rem;position: absolute;top: 3.3rem;left: 2.6rem;" src="images/1.png" />
+			<div style="position: absolute;left: 20%;top: 32%;" id="">
+				<ul style="width: 100%;">
+					<li id="handrad" style="width: 2rem;height:3rem;background: url(images/p2_scoring.png);background-size: 100% 100%;display: inline-block;font-size: 1rem;text-align: center;line-height: 3rem;">0</li>
+					<li id="ten" style="width: 2rem;height:3rem;background: url(images/p2_scoring.png);background-size: 100% 100%;display: inline-block;font-size: 1rem;text-align: center;line-height: 3rem;">0</li>
+					<li id="ge" style="width: 2rem;height:3rem;background: url(images/p2_scoring.png);background-size: 100% 100%;display: inline-block;font-size: 1rem;text-align: center;line-height: 3rem;">0</li>
+				</ul>
+				<div style="position:absolute;left:115%;top:0;width: 3rem;height: 3rem;background: url(images/shizhong.png);background-size:100% 100% ;font-size: 1rem;text-align: center;line-height: 3rem;" id="clock">
+					60
+				</div>
+
+			</div>
+
+		</div>
+		<div style="width: 100%;height: 100%;background: url(images/bg2.png);background-size: 100% 100%;position: fixed;left: 0;top: 0;display: none;" id="endPage">
+			<span style="display: block;text-align: center;color: red;font-size: 1rem;z-index: 999;margin-top: 9rem;" id="result">
+				
+			</span>
+			<div style="width: 4rem;height: 4rem;background:rgba(255,0,0,0.5);z-index: 999;border-radius: 50%;position: absolute;top: 13rem;left: 2.5rem;" id="back">
+				<p style="color: white;font-size: 1rem;text-align: center;line-height: 1.5rem;margin-top: .5rem;">返&nbsp;回<br />华&nbsp;艺</p>
+			</div>
+			<div style="width: 4rem;height: 4rem;background:rgba(255,0,0,0.5);z-index: 999;border-radius: 50%;position: absolute;top: 13rem;right: 2.5rem;" id="returnto">
+				<p style="color: white;font-size: 1rem;text-align: center;line-height: 1.5rem;margin-top: .5rem;">再&nbsp;玩<br />一&nbsp;次</p>
+			</div>
+			<img style="width: 100%;z-index: 999;position: absolute;bottom: 0;" src="images/p2_zhuan.png" />
+			<img style="width: 7rem;position:absolute;top: 15rem;left: 4.5rem;" src="images/p2_qian.jpg" />
+			<img style="width: 12rem;z-index: 1000;position: absolute;top: 3rem;left: 2rem;" src="images/yingqu.png" />
+			
+		</div>
+	</body>
+
+</html>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<!--大小转变-->
+<script type="text/javascript">
+	$("document").ready(function() {
+
+		var scale = document.documentElement.clientWidth / 320 * 20;
+		$("html").css({
+			fontSize: scale + "px"
+		});
+	});
+</script>
+<!--开始界面-->
+<script type="text/javascript">
+	$("#rank").on("touchstart", function() {
+		ranks.style.display = "block";
+		guizes.style.display = "none";
+		prizes.style.display = "none";
+		shuoming1.style.display = "none";
+	});
+	$("#rule").on("touchstart", function() {
+		ranks.style.display = "none";
+		guizes.style.display = "block";
+		prizes.style.display = "none";
+		shuoming1.style.display = "none";
+	});
+	$("#prize").on("touchstart", function() {
+		ranks.style.display = "none";
+		guizes.style.display = "none";
+		prizes.style.display = "block";
+		shuoming1.style.display = "none";
+	});
+	$("#shiyong").on("touchstart", function() {
+		ranks.style.display = "none";
+		guizes.style.display = "none";
+		prizes.style.display = "none";
+		shuoming1.style.display = "block";
+	});
+	$("#close1").on("touchstart", function() {
+		ranks.style.display = "none";
+		guizes.style.display = "none";
+		prizes.style.display = "none";
+		shuoming1.style.display = "none";
+	});
+	$("#close2").on("touchstart", function() {
+		ranks.style.display = "none";
+		guizes.style.display = "none";
+		prizes.style.display = "none";
+		shuoming1.style.display = "none";
+	});
+	$("#close3").on("touchstart", function() {
+		ranks.style.display = "none";
+		guizes.style.display = "none";
+		prizes.style.display = "none";
+		shuoming1.style.display = "none";
+	});
+	$("#close4").on("touchstart", function() {
+		ranks.style.display = "none";
+		guizes.style.display = "none";
+		prizes.style.display = "none";
+		shuoming1.style.display = "none";
+	});
+	$("#close5").on("touchstart", function() {
+		ranks.style.display = "none";
+		guizes.style.display = "none";
+		prizes.style.display = "none";
+		shuoming1.style.display = "none";
+		inputm.style.display = "none";
+	});
+	$("#start").on("touchstart", function() {
+		ranks.style.display = "none";
+		guizes.style.display = "none";
+		prizes.style.display = "none";
+		shuoming1.style.display = "none";
+		inputm.style.display = "block";
+	});
+</script>
+<!--正则-->
+<script type="text/javascript">
+	$("#sub").on("touchstart", function() {
+		var str1 = name.value;
+		var reg1 = /\S+/;
+		var result1 = reg1.test(str1);
+		var str2 = phone.value;
+		var reg2 = /^1([3487])\d{9}|(4[57]\d{8})$/;
+
+		var result2 = reg2.test(str2);
+		if(result1 == false) {
+			alert('您没有输入姓名');
+
+		}
+		if(result2 == false) {
+			alert('您输入的号码有误');
+
+		}
+		if(result1 == true && result2 == true) {
+			alert('恭喜您的信息已提交成功!');
+			inputm.style.display = 'none';
+			startpage.style.display = "none";
+			wrap.style.display = "block";
+			var timer = setInterval(function() {
+			time1--;
+			$("#clock").html(time1);
+			if(time1 == 0) {
+				clearInterval(timer);
+				//alert("游戏结束,您抢到了" + i + "元红包!");
+				wrap.style.display = "none";
+				endPage.style.display = "block";
+				result.innerHTML = "游戏结束,您抢到了" + i + "元红包!"
+				
+			}
+		}, 1000);
+
+		}
+	});
+</script>
+<script src="js/touch.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	var scale = 0;
+
+	function fit() {
+		scale = document.documentElement.clientWidth / 320 * 20;
+		$("html").css({
+			fontSize: scale + "px"
+		});
+	}
+	fit();
+	window.onresize = function() {
+		fit();
+	}
+</script>
+<!--游戏界面-->
+<script type="text/javascript">
+	$("#back").on("touchstart",function(){
+		window.location.href = "http://www.huayiad.xyz/index1.html";
+	});
+	$("#returnto").on("touchstart",function(){
+		window.location.reload();
+	});
+	function moneyAnimate() {
+		var aImg = $("<img/>").attr("src", "images/p2_qian.jpg").attr("class", "moneyAni");
+		$("#wrap").append(aImg);
+		aImg.animate({
+			top: "10rem",
+			width: "0rem",
+			height: "0",
+			opacity: "0",
+			left: "2rem"
+		}, 500, function() {
+			aImg.remove();
+		});
+	}
+
+	var money = document.getElementById('money');
+	var i = 0;
+	//用来记录上一次结束的位置
+	var y1 = 0;
+	var y2 = 0;
+	var gewei = 0;
+	var tenwei = 0;
+	var handradwei = 0;
+	var time1 = 60;
+	//绑定事件
+	$("#money").on("touchstart", function() {
+		var ev = event || window.event;
+		var num = ev.touches[0];
+		y1 = num.clientY;
+		//moneyAnimate();
+	});
+	$("#money").on("touchend", function(e) {
+
+		var aTouch = e.originalEvent.changedTouches[0];
+		var y2 = aTouch.pageY;
+		//moneyAnimate();
+
+		if(y1 > y2) {
+			moneyAnimate();
+			i++;
+
+			gewei += 1;
+			if(gewei > 9) {
+				gewei = 0;
+				tenwei++;
+			}
+			if(tenwei > 9) {
+				tenwei = 0;
+				handradwei++;
+			}
+
+			if(tenwei > 9) {
+				handradwei++;
+			}
+
+			//			console.log(gewei);
+			//			console.log(tenwei);
+			//			console.log(handradwei);
+			//			console.log(i);
+			$("#ge").html(gewei);
+			$("#ten").html(tenwei);
+			$("#handrad").html(handradwei);
+		}
+	});
+	var q1 = 1;
+	var txt = document.getElementById("txt");
+	setInterval(function() {
+		q1++;
+		if(q1 > 3) {
+			q1 = 1;
+		}
+		txt.src = "images/" + q1 + ".png";
+	}, 2000);
+	
+		
+	
+</script>
